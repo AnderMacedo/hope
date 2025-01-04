@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hope | E-commerce</title>
+
+  <!-- Vincular Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Vincular el CSS global -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Vincular los estilos de la página de inicio -->
+  <link rel="stylesheet" href="assets/css/pages/index.css">
+
+<!-- Asegúrate de incluir jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  // Verificar si jQuery está cargado
+  if (typeof jQuery != 'undefined') {
+    console.log("jQuery está cargado");
+  } else {
+    console.log("jQuery no está cargado");
+  }
+</script>
+
+</head>
+<body>
+  <!-- Incluir el navbar -->
+  <div id="navbar"></div>
+
+  <!-- Main Content -->
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Bienvenidos a Hope</h1>
+        <p>Descubre nuestros productos exclusivos para ti</p>
+        <a href="pages/products.html" class="btn-primary">Ver Productos</a>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <h2>Productos Destacados</h2>
+      <div class="product-grid">
+        <!-- Producto 1 -->
+        <div class="product-card">
+          <img src="assets/images/bag-mediana-grecia.png" alt="Bag Grecia">
+          <h3>Bag Grecia</h3>
+          <p>$50.00</p>
+          <a href="pages/products.html" class="btn-secondary">Ver Detalles</a>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card">
+          <img src="assets/images/maxipuffer-atenea.png" alt="Maxi Puffer Atenea">
+          <h3>Maxi Puffer Atenea</h3>
+          <p>$120.00</p>
+          <a href="pages/products.html" class="btn-secondary">Ver Detalles</a>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card">
+          <img src="assets/images/minibag-lola.png" alt="Mini Bag Lola">
+          <h3>Mini Bag Lola</h3>
+          <p>$40.00</p>
+          <a href="pages/products.html" class="btn-secondary">Ver Detalles</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Incluir el footer -->
+  <div id="footer"></div>
+
+  <!-- Script para cargar el navbar -->
+  <script>
+    $(document).ready(function() {
+      // Cargar el navbar
+      $("#navbar").load("components/navbar.html");
+      
+      // Cargar el footer
+      $("#footer").load("components/footer.html");
+    });
+  </script>
+  
+</body>
+</html>

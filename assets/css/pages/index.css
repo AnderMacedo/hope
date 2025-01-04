@@ -1,0 +1,86 @@
+/* assets/css/pages/index.css */
+
+/* Estilo para la sección Hero */
+.hero {
+  background-color: #f1e6d9;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.hero .btn-primary {
+  background-color: #9b9b9b;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Estilo para la sección de productos destacados */
+.featured-products {
+  padding: 40px 20px;
+}
+
+.featured-products h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+.product-card .btn-secondary {
+  background-color: #9b9b9b;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Estilo para el pie de página */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1e6d9;
+  font-size: 1rem;
+}

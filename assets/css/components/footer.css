@@ -1,0 +1,18 @@
+/* Estilos generales para el footer */
+footer {
+  background-color: #d9cbbd;
+  padding: 1rem;
+  text-align: center;
+  color: #4a4a4a;
+  border-top: 2px solid #b6a394;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  footer p {
+    font-size: 12px;
+  }
+}

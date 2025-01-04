@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hope | Productos</title>
+
+  <!-- Vincular Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Vincular el CSS global -->
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- Vincular los estilos del navbar -->
+  <link rel="stylesheet" href="assets/css/components/navbar.css">
+
+  <!-- Vincular los estilos de la página de productos -->
+  <link rel="stylesheet" href="../assets/css/pages/products.css">
+</head>
+<body>
+  <!-- Incluir el navbar -->
+  <div id="navbar"></div>
+
+  <!-- Main Content -->
+  <main>
+    <section class="product-list">
+      <h1 class="title">Productos Disponibles</h1>
+      <div class="product-grid">
+        <!-- Producto 1 -->
+        <div class="product-card">
+          <img src="../assets/images/bag-mediana-grecia.png" alt="Bag Grecia">
+          <h3>Bag Grecia</h3>
+          <p>$50.00</p>
+          <a href="product-details.html" class="btn-primary">Ver Detalles</a>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card">
+          <img src="../assets/images/maxipuffer-atenea.png" alt="Maxi Puffer Atenea">
+          <h3>Maxi Puffer Atenea</h3>
+          <p>$120.00</p>
+          <a href="product-details.html" class="btn-primary">Ver Detalles</a>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card">
+          <img src="../assets/images/minibag-lola.png" alt="Mini Bag Lola">
+          <h3>Mini Bag Lola</h3>
+          <p>$40.00</p>
+          <a href="product-details.html" class="btn-primary">Ver Detalles</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Hope. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Incluir jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Cargar el navbar mediante jQuery -->
+  <script>
+    $(document).ready(function() {
+      console.log("Cargando navbar...");
+      var navbarPath = '../components/navbar.html';
+      console.log("Ruta del navbar:", navbarPath);
+
+      // Cargar el navbar
+      $("#navbar").load(navbarPath, function(response, status, xhr) {
+        if (status === "error") {
+          console.log("Error al cargar el navbar:", xhr.status, xhr.statusText);
+        } else {
+          console.log("Navbar cargado correctamente.");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
