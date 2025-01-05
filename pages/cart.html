@@ -1,1 +1,127 @@
-awdawd
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hope | Carrito de Compras</title>
+
+  <!-- Vincular Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Vincular el CSS global -->
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- Vincular los estilos específicos del carrito -->
+  <link rel="stylesheet" href="../assets/css/pages/cart.css">
+</head>
+<body>
+
+  <!-- Incluir el navbar -->
+  <div id="navbar"></div>
+
+  <!-- Main Content -->
+  <main>
+    <section class="cart">
+      <h1 class="title">Carrito de Compras</h1>
+
+      <div class="cart-items" id="cart-items">
+        <!-- Los productos del carrito se añadirán dinámicamente aquí -->
+      </div>
+
+      <div class="cart-summary">
+        <p id="cart-total">Total: $0.00</p>
+        <button id="btn-clear-cart" class="btn-danger">Eliminar Todos los Productos</button>
+        <a href="#" class="btn-primary">Proceder al Pago</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Incluir el footer -->
+  <div id="footer"></div>
+
+  <!-- Vincular jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Script para cargar el navbar y gestionar el carrito -->
+  <script>
+    $(document).ready(function() {
+      // Cargar el navbar
+      $("#navbar").load("../components/navbar.html");
+  
+      // Cargar el footer
+      $("#footer").load("../components/footer.html");
+  
+        // Función para actualizar el carrito
+        function updateCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartItemsContainer = $("#cart-items");
+            cartItemsContainer.empty();
+            
+            let total = 0;
+            
+            cart.forEach(function(item) {
+                if (item.price && item.quantity) {
+                    let itemTotal = parseFloat(item.price.replace('$', '').replace(',', '')) * item.quantity;
+                    total += itemTotal;
+                
+                    let cartItem = `
+                        <div class="cart-item">
+                            <img src="${item.image}" alt="${item.name}">
+                            <div class="cart-item-details">
+                                <h3>${item.name}</h3>
+                                <p>${item.price}</p>
+                                <p>Cantidad: ${item.quantity}</p>
+                            </div>
+                            <div class="cart-item-remove">
+                                <button class="btn-remove" data-id="${item.id}">Eliminar</button>
+                            </div>
+                        </div>
+                    `;
+                    cartItemsContainer.append(cartItem);
+                }
+            });
+        
+            $("#cart-total").text(`Total: $${total.toFixed(2)}`);
+        }
+    
+  
+      // Llamar a la función para actualizar el carrito
+      updateCart();
+  
+        // Eliminar un producto del carrito de uno en uno
+        $(document).on("click", ".btn-remove", function() {
+            let productId = $(this).data("id");
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+            // Buscar el producto en el carrito y reducir la cantidad
+            for (let i = 0; i < cart.length; i++) {
+                if (cart[i].id === productId) {
+                    if (cart[i].quantity > 1) {
+                        cart[i].quantity--; // Disminuir la cantidad
+                    } else {
+                        cart.splice(i, 1); // Eliminar el ítem si la cantidad es 1
+                    }
+                    break;
+                }
+            }
+        
+            // Guardar el carrito actualizado en localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+        
+            // Actualizar el carrito
+            updateCart();
+            updateCartCount(); // Actualizar el contador del carrito en el navbar
+        });
+
+  
+      // Eliminar todos los productos del carrito
+      $("#btn-clear-cart").on("click", function() {
+        localStorage.removeItem('cart');
+        updateCart();
+        updateCartCount(); // Actualizar el contador del carrito en el navbar
+      });
+    });
+  </script>  
+  <script src="../assets/js/script.js"></script> <!-- Cargar script.js aquí -->
+</body>
+</html>

@@ -75,9 +75,27 @@
   text-decoration: none;
   display: inline-block;
   transition: background-color 0.3s;
+  margin-top: 10px;
 }
 
 /* Efecto hover en el botón de ver detalles */
 .product-card .btn-secondary:hover {
   background-color: #0056b3;
+}
+
+/* Botón para añadir al carrito */
+.product-card .btn-add-cart {
+  background-color: #8c754a;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+/* Efecto hover en el botón de añadir al carrito */
+.product-card .btn-add-cart:hover {
+  background-color: #705e36;
 }

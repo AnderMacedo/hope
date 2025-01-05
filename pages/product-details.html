@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope | Detalles del Producto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/pages/product-details.css">
+    <link rel="stylesheet" href="../assets/css/components/navbar.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main>
+    <section class="product-details">
+      <div id="product-info">
+        <!-- Detalles del producto se cargarán aquí -->
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Obtener el parámetro de la URL (id del producto)
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get('id');
+
+      // Cargar los productos desde el archivo JSON
+      $.getJSON('../data/products.json', function(products) {
+        // Buscar el producto con el id correspondiente
+        const product = products.find(p => p.id === productId);
+
+        // Si se encuentra el producto, mostrar sus detalles
+        if (product) {
+          const productDetails = `
+            <div class="product-main">
+              <img src="${product.image}" alt="${product.name}">
+              <div class="product-info">
+                <h1>${product.name}</h1>
+                <p class="price">${product.price}</p>
+                <p class="description">${product.description}</p>
+                <p class="category"><strong>Categoría:</strong> ${product.category}</p>
+                <p class="stock"><strong>En stock:</strong> ${product.stock} unidades</p>
+                <p class="ratings"><strong>Calificación:</strong> ${product.ratings} estrellas</p>
+                <button class="btn-add-cart" 
+                        data-id="${product.id}" 
+                        data-name="${product.name}" 
+                        data-price="${product.price}" 
+                        data-image="${product.image}">Añadir al Carrito</button>
+              </div>
+            </div>
+            <div class="product-gallery">
+              <h3>Galería de Imágenes</h3>
+              <div class="gallery">
+                ${product.detailsImages.map(image => `<img src="${image}" alt="${product.name}">`).join('')}
+              </div>
+            </div>
+          `;
+          $('#product-info').html(productDetails);
+        } else {
+          $('#product-info').html('<p>Producto no encontrado.</p>');
+        }
+      });
+    });
+  </script>
+  <script src="../assets/js/script.js"></script> <!-- Cargar script.js aquí -->
+</body>
+</html>

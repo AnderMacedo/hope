@@ -1,0 +1,149 @@
+/* Estilos generales para el carrito */
+.cart {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título de la página del carrito */
+  .cart h1.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Contenedor de los productos en el carrito */
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Estilo para cada producto del carrito */
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .cart-item:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Imagen del producto */
+  .cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  
+  /* Detalles del producto */
+  .cart-item-details {
+    flex: 1;
+    font-size: 1rem;
+  }
+  
+  .cart-item-details h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0 0 5px 0;
+  }
+  
+  .cart-item-details p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Botón para eliminar un producto */
+  .cart-item-remove button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .cart-item-remove button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Estilos para la sección del total */
+  .cart-summary {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #cart-total {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Botón para proceder al pago */
+  .cart-summary .btn-primary {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-summary .btn-primary:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Botón para eliminar todos los productos */
+  #btn-clear-cart {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  #btn-clear-cart:hover {
+    background-color: #d4554a;
+  }
+  
+  /* Alineación de botones en la sección del total */
+  .cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cart-summary .actions {
+    display: flex;
+    gap: 10px;
+  }
+  

@@ -1,0 +1,43 @@
+[
+    {
+      "id": "bag-grecia",
+      "name": "Bag Grecia",
+      "price": "$50.00",
+      "description": "Bolso mediano de estilo Grecia, hecho a mano con materiales de alta calidad. Perfecto para cualquier ocasión.",
+      "image": "../assets/images/bag-mediana-grecia.png",
+      "detailsImages": [
+        "../assets/images/bag-mediana-grecia.png"
+      ],
+      "category": "bolsos",
+      "stock": 10,
+      "ratings": 4.5
+    },
+    {
+      "id": "maxipuffer-atenea",
+      "name": "Maxi Puffer Atenea",
+      "price": "$120.00",
+      "description": "Chaqueta estilo puffer con un diseño único y elegante. Ideal para los días fríos y modernos.",
+      "image": "../assets/images/maxipuffer-atenea.png",
+      "detailsImages": [
+        "../assets/images/maxipuffer-atenea.png"
+      ],
+      "category": "ropa",
+      "stock": 5,
+      "ratings": 4.8
+    },
+    {
+      "id": "minibag-lola",
+      "name": "Mini Bag Lola",
+      "price": "$40.00",
+      "description": "Mini bolso de mano con detalles únicos y delicados. Hecho artesanalmente para darle un toque único a tu outfit.",
+      "image": "../assets/images/minibag-lola.png",
+      "detailsImages": [
+        "../assets/images/minibag-lola.png",
+        "../assets/images/minibag-lola-2.png"
+      ],
+      "category": "bolsos",
+      "stock": 15,
+      "ratings": 4.3
+    }
+  ]
+  

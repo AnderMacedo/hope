@@ -3,15 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nuestra Historia - Hope</title>
+  <title>Sobre Nosotros | Hope</title>
+
+  <!-- Vincular Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Vincular el CSS global -->
   <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- Vincular los estilos del navbar -->
+  <link rel="stylesheet" href="../assets/css/components/navbar.css">
+
+  <!-- Vincular los estilos del footer -->
+  <link rel="stylesheet" href="../assets/css/components/footer.css">
+
+  <!-- Vincular los estilos de la página about -->
+  <link rel="stylesheet" href="../assets/css/pages/about.css">
 </head>
 <body>
-  <header>
-    <h1>Conoce Nuestra Historia</h1>
-  </header>
+  <!-- Incluir el navbar -->
+  <div id="navbar"></div>
+
+  <!-- Main Content -->
   <main>
-    <p>Hope es una marca dedicada a ofrecer productos artesanales...</p>
+    <section class="about-hero">
+      <h1>Nuestra Historia</h1>
+      <p>Celebrando la artesanía peruana a través de bolsos y carteras únicos.</p>
+    </section>
+
+    <section class="about-content">
+      <h2>¿Quiénes Somos?</h2>
+      <p>En **Hope**, nos enorgullece ser una marca 100% peruana, dedicada a la creación de bolsos y carteras artesanales. Cada pieza es una obra de arte, confeccionada con técnicas tradicionales que han pasado de generación en generación. Nuestro compromiso es llevar la riqueza cultural de Perú al mundo, fusionando diseño contemporáneo con tradición.</p>
+
+      <h2>Nuestra Misión</h2>
+      <p>Empoderar a los artesanos peruanos y ofrecer al mundo productos auténticos que reflejen nuestra herencia cultural, garantizando calidad y sostenibilidad en cada creación.</p>
+
+      <h2>Nuestra Visión</h2>
+      <p>Ser un referente global en la moda artesanal, destacando la belleza y la historia detrás de cada bolso y cartera, mientras promovemos el desarrollo sostenible de nuestras comunidades.</p>
+
+      <h2>Nuestros Valores</h2>
+      <ul>
+        <li><strong>Autenticidad:</strong> Cada pieza cuenta una historia única de la tradición peruana.</li>
+        <li><strong>Sostenibilidad:</strong> Valoramos el medio ambiente y trabajamos con materiales eco-amigables.</li>
+        <li><strong>Calidad:</strong> Nuestro compromiso es con la excelencia en cada detalle.</li>
+        <li><strong>Comunidad:</strong> Apoyamos a los artesanos locales y sus familias, fomentando un impacto social positivo.</li>
+      </ul>
+
+      <h2>Conoce al Equipo</h2>
+      <p>Detrás de cada bolso y cartera hay un equipo apasionado de artesanos peruanos, diseñadores y creativos que trabajan juntos para ofrecer productos que te harán lucir y sentir especial.</p>
+    </section>
   </main>
+
+  <!-- Incluir el footer -->
+  <div id="footer"></div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Script para cargar el navbar y footer -->
+  <script>
+    $(document).ready(function() {
+      // Cargar el navbar
+      $('#navbar').load('../components/navbar.html', function(response, status, xhr) {
+        if (status == "error") {
+          console.error("Error al cargar el navbar:", xhr.status, xhr.statusText);
+        }
+      });
+
+      // Cargar el footer
+      $('#footer').load('../components/footer.html', function(response, status, xhr) {
+        if (status == "error") {
+          console.error("Error al cargar el footer:", xhr.status, xhr.statusText);
+        }
+      });
+    });
+  </script>
+  <script src="../assets/js/script.js"></script> <!-- Cargar script.js aquí -->
 </body>
 </html>

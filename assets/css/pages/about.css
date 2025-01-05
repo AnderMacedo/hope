@@ -1,0 +1,69 @@
+/* Estilo general para el main */
+main {
+  padding: 60px 20px;
+  background-color: #fdf8f3;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+/* Sección de héroe (encabezado) */
+.about-hero {
+  text-align: center;
+  background-color: #d6cbb7;
+  padding: 60px 20px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+}
+
+/* Sección de contenido */
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  color: #8c754a;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-content ul {
+  padding-left: 20px;
+}
+
+.about-content ul li {
+  margin-bottom: 10px;
+}
+
+.about-content ul li strong {
+  color: #8c754a;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+}
