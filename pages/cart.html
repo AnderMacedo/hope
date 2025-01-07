@@ -31,7 +31,8 @@
       <div class="cart-summary">
         <p id="cart-total">Total: $0.00</p>
         <button id="btn-clear-cart" class="btn-danger">Eliminar Todos los Productos</button>
-        <a href="#" class="btn-primary">Proceder al Pago</a>
+        <!-- Modifica el enlace del botón Proceder al Pago -->
+        <a href="#" id="btn-proceed" class="btn-primary">Proceder al Pago</a>
       </div>
     </section>
   </main>
@@ -122,6 +123,35 @@
       });
     });
   </script>  
+
+  <script>
+    // Función para proceder al pago y redirigir a WhatsApp con los detalles
+    $("#btn-proceed").on("click", function(e) {
+      e.preventDefault(); // Prevenir la acción por defecto del enlace
+
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      let message = "¡Hola! Estoy interesado en los siguientes productos:\n\n";
+      let total = 0;
+
+      // Recorrer el carrito y crear el mensaje
+      cart.forEach(function(item) {
+          if (item.price && item.quantity) {
+              let itemTotal = parseFloat(item.price.replace('$', '').replace(',', '')) * item.quantity;
+              total += itemTotal;
+              message += `${item.name} - ${item.price} x${item.quantity}\n`;
+          }
+      });
+
+      message += `\nTotal: $${total.toFixed(2)}\n\nEspero su respuesta.`;
+
+      // Crear el enlace de WhatsApp (reemplazar con el número de teléfono de la persona)
+      let phoneNumber = "51987042713"; // Cambia por el número de WhatsApp real
+      let whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+      // Redirigir al chat de WhatsApp
+      window.location.href = whatsappLink;
+    });
+  </script>
   <script src="../assets/js/script.js"></script> <!-- Cargar script.js aquí -->
 </body>
 </html>

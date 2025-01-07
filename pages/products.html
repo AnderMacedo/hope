@@ -14,29 +14,64 @@
   <main>
     <section class="product-list">
       <h1 class="title">Productos Disponibles</h1>
-      <div class="product-grid" id="product-grid">
-        <!-- Los productos se agregarán dinámicamente aquí -->
+      <div class="product-container">
+        <div class="products-section">
+          <div class="search-bar">
+            <button id="sidebar-toggle" class="hamburger-categories-btn">
+              <i class="fas fa-bars"></i> Categorías
+            </button>
+            <input type="text" id="search-input" placeholder="Buscar productos...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+          </div>
+          <div class="product-grid" id="product-grid">
+            <!-- Los productos se agregarán dinámicamente aquí -->
+          </div>
+        </div>
       </div>
     </section>
   </main>
+
+  <!-- Fondo oscuro cuando el sidebar está abierto -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Sidebar de categorías -->
+  <div id="sidebar-categories" class="sidebar-categories">
+    <div class="sidebar-header">
+      <h2>Categorías</h2>
+      <button id="close-sidebar" class="close-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <ul id="category-list" class="category-list">
+      <li><button class="category-btn" data-category="all">Todos</button></li>
+      <!-- Categorías dinámicas se agregarán aquí -->
+    </ul>
+  </div>
 
   <div id="footer"></div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     $(document).ready(function() {
-      // Cargar el navbar
       $('#navbar').load('../components/navbar.html', function() {
         updateCartCount();
       });
-  
-      // Cargar el footer
+
       $('#footer').load('../components/footer.html');
-  
+
+      let products = [];
+      let categories = new Set();
+
       // Cargar los productos desde el archivo JSON
-      $.getJSON('../data/products.json', function(products) {
+      $.getJSON('../data/products.json', function(data) {
+        products = data;
+        renderProducts(products);
+        data.forEach(product => categories.add(product.category));
+        renderCategories(Array.from(categories));
+      });
+
+      function renderProducts(products) {
+        $('#product-grid').empty();
         products.forEach(function(product) {
-          var productCard = `
+          var productCard = ` 
             <div class="product-card">
               <img src="${product.image}" alt="${product.name}">
               <h3>${product.name}</h3>
@@ -47,9 +82,60 @@
           `;
           $('#product-grid').append(productCard);
         });
+      }
+
+      function renderCategories(categories) {
+        $('#category-list').empty();
+        $('#category-list').append('<li><button class="category-btn" data-category="all">Todos</button></li>');
+        categories.forEach(function(category) {
+          var categoryItem = `<li><button class="category-btn" data-category="${category}">${category}</button></li>`;
+          $('#category-list').append(categoryItem);
+        });
+      }
+
+      // Filtrar productos por categoría
+      $(document).on('click', '.category-btn', function() {
+        let selectedCategory = $(this).data('category');
+        if (selectedCategory === 'all') {
+          renderProducts(products);
+        } else {
+          let filteredProducts = products.filter(product => product.category === selectedCategory);
+          renderProducts(filteredProducts);
+        }
+      });
+
+      // Función de búsqueda
+      $('#search-btn').on('click', function() {
+        let query = $('#search-input').val().toLowerCase();
+        let filteredProducts = products.filter(product => product.name.toLowerCase().includes(query));
+        renderProducts(filteredProducts);
+      });
+
+      $('#search-input').on('keyup', function() {
+        let query = $(this).val().toLowerCase();
+        let filteredProducts = products.filter(product => product.name.toLowerCase().includes(query));
+        renderProducts(filteredProducts);
+      });
+
+      // Mostrar el sidebar de categorías al hacer clic en el botón de tipo "sándwich"
+      $('#sidebar-toggle').on('click', function() {
+        $('#sidebar-categories').toggleClass('open');
+        $('#overlay').toggleClass('active'); // Activar fondo oscuro
+      });
+
+      // Ocultar el sidebar de categorías al hacer clic en el botón de cerrar
+      $('#close-sidebar').on('click', function() {
+        $('#sidebar-categories').removeClass('open');
+        $('#overlay').removeClass('active'); // Desactivar fondo oscuro
+      });
+
+      // Ocultar el sidebar al hacer clic en el fondo oscuro
+      $('#overlay').on('click', function() {
+        $('#sidebar-categories').removeClass('open');
+        $('#overlay').removeClass('active'); // Desactivar fondo oscuro
       });
     });
   </script>
-  <script src="../assets/js/script.js"></script> <!-- Cargar script.js aquí -->
+  <script src="../assets/js/script.js"></script>
 </body>
-</html>
+</html
