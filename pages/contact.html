@@ -11,6 +11,9 @@
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Font Awesome para iconos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <!-- Navbar -->
@@ -18,35 +21,91 @@
 
   <!-- Main Content -->
   <main>
-    <section class="contact-hero">
-      <h1>Contacto</h1>
-      <p>Nos encantaría saber de ti</p>
+    <!-- Hero Section con imagen de fondo -->
+    <section class="contact-hero" style="background-image: url('../assets/images/contact-banner.jpg');">
+      <div class="hero-content">
+        <h1>Contacto</h1>
+        <p>Nos encantaría saber de ti</p>
+      </div>
     </section>
 
-    <section class="contact-form-section">
-      <h2>Envíanos un mensaje</h2>
-      <form id="contact-form">
-        <div class="form-group">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Correo Electrónico</label>
-          <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Mensaje</label>
-          <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
-        </div>
-        <button type="submit" class="btn-primary">Enviar</button>
-      </form>
-    </section>
-
+    <!-- Sección de Información de Contacto -->
     <section class="contact-info">
-      <h2>Información de Contacto</h2>
-      <p><strong>Dirección:</strong> Calle Falsa 123, Lima, Perú</p>
-      <p><strong>Teléfono:</strong> +51 987 654 321</p>
-      <p><strong>Email:</strong> contacto@hope.com</p>
+      <h2>Conéctate con nosotros</h2>
+      <div class="social-links">
+        <p><i class="fab fa-instagram" style="color: #E4405F;"></i> <strong>Instagram:</strong> hope_pursebag.pe</p>
+        <p><i class="fab fa-tiktok" style="color: #000000;"></i> <strong>TikTok:</strong> hope_pursebag.pe</p>
+        <p><i class="fab fa-facebook" style="color: #1877F2;"></i> <strong>Facebook:</strong> Hope Purse&Bag</p>
+        <p><i class="fab fa-whatsapp" style="color: #25D366;"></i> <strong>WhatsApp:</strong> +51 901 175 621</p>
+        <p><i class="far fa-envelope" style="color: #FF5F00;"></i> <strong>Email:</strong> melanyfabiola26@gmail.com</p>
+      </div>
+    </section>
+
+    <!-- Sección de Preguntas Frecuentes (FAQ) -->
+    <section class="faq-section">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="faq-item">
+        <button class="accordion">¿Cuáles son los métodos de pago disponibles?</button>
+        <div class="panel">
+          <p>Puedes realizar tu compra a través de Yape, Plin o transferencia bancaria (BCP).</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="accordion">¿Cómo realizo un pedido?</button>
+        <div class="panel">
+          <p>Los pedidos se gestionan a través de Instagram y WhatsApp. Una vez confirmado el pago, se enviará tu pedido.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="accordion">¿Cuánto tiempo tardará en llegar mi pedido?</button>
+        <div class="panel">
+          <p>El envío se realiza en 5 días hábiles. El tiempo de entrega varía según tu ubicación.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="accordion">¿Cuáles son los costos de envío?</button>
+        <div class="panel">
+          <p>Los envíos a Lima tienen un costo de 10 soles y a provincia de 10 a 12 soles, dependiendo de la ubicación.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="accordion">¿Dónde está ubicada Hope Purse & Bag?</button>
+        <div class="panel">
+          <p>Hope Purse & Bag es un emprendimiento peruano fundado en 2024 por Melany Fabiola, con experiencia en diseño de modas y gráfico.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="accordion">¿Qué tipo de materiales usan en sus productos?</button>
+        <div class="panel">
+          <p>Usamos telas de alta calidad, bio cuero, y avíos de acero inoxidable, asegurando durabilidad y funcionalidad en cada producto.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="accordion">¿Son los productos hechos a mano?</button>
+        <div class="panel">
+          <p>Sí, todos nuestros productos son hechos a mano con un enfoque artesanal para garantizar calidad y exclusividad.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="accordion">¿Puedo personalizar un bolso o cartera?</button>
+        <div class="panel">
+          <p>Actualmente no ofrecemos personalización, pero estamos evaluando opciones para mejorar y diversificar nuestros productos.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="accordion">¿Cómo puedo contactar con Hope Purse & Bag?</button>
+        <div class="panel">
+          <p>Puedes contactarnos a través de Instagram (@hope_pursebag.pe) o WhatsApp (+51 901 175 621).</p>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -60,6 +119,20 @@
       $("#navbar").load("../components/navbar.html");
       // Cargar el footer
       $("#footer").load("../components/footer.html");
+
+      // Acordeón FAQ
+      var acc = document.getElementsByClassName("accordion");
+      for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
     });
   </script>
   <script src="../assets/js/script.js"></script> <!-- Cargar script.js aquí -->

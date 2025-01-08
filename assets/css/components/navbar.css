@@ -1,7 +1,7 @@
 /* navbar.css */
 .navbar {
   background-color: #f1e6d9;
-  padding: 10px 0;
+  /*padding: 10px 0;*/
   position: fixed;
   width: 100%;
   top: 0;
@@ -25,7 +25,7 @@
 }
 
 .navbar-logo img {
-  height: 40px;
+  height: 60px;
   width: auto;
 }
 
@@ -94,11 +94,16 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 10px;
+}
+
+.sidebar-logo{
+  margin-bottom: 100px;
 }
 
 .sidebar-logo img {
-  height: 40px;
-  margin-bottom: 20px;
+  height: 90px;
+  /*margin-bottom: 20px;*/
 }
 
 .sidebar-menu {
@@ -214,4 +219,46 @@
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+/* Estilizar la sección del carrito en el sidebar */
+.sidebar-cart {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-cart a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333; /* Color del texto */
+  font-weight: bold;
+}
+
+.sidebar-cart i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.sidebar-cart span {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.sidebar-cart .cart-count {
+  background-color: #ff6b6b; /* Color rojo para el contador */
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+}
+
+/* Efecto hover para el carrito */
+.sidebar-cart:hover {
+  background-color: #e9ecef; /* Cambio de color al pasar el mouse */
 }

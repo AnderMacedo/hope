@@ -14,6 +14,9 @@
   <!-- Vincular los estilos de la página de inicio -->
   <link rel="stylesheet" href="assets/css/pages/index.css">
 
+    <!-- Incluir la fuente "Bodoni Moda" de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+
   <!-- Asegúrate de incluir jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -26,7 +29,21 @@
     <section class="hero">
       <div class="hero-content">
         <h1>Bienvenidos a Hope</h1>
-        <p>Descubre nuestros productos exclusivos para ti</p>
+        <p class="hero-description">Descubre nuestros productos exclusivos para ti</p>
+        <div class="hero-icons">
+          <div class="icon-item">
+            <i class="fas fa-shipping-fast"></i>
+            <p>Envíos seguros</p>
+          </div>
+          <div class="icon-item">
+            <i class="fas fa-headset"></i>
+            <p>Soporte</p>
+          </div>
+          <div class="icon-item">
+            <i class="fas fa-dollar-sign"></i>
+            <p>Precios justos</p>
+          </div>
+        </div>
         <a href="pages/products.html" class="btn-primary">Ver Productos</a>
       </div>
     </section>
