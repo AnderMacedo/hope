@@ -89,6 +89,10 @@ nav a:hover {
 }
 
 .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   border: 1px solid #e0d6cb;
   border-radius: 8px;
@@ -104,6 +108,7 @@ nav a:hover {
 .product-card img {
   width: 100%;
   height: auto;
+  max-height: 260px;
 }
 
 .product-card .info {

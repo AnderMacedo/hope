@@ -12,6 +12,8 @@ body {
   background-color: #fff;
   margin: 20px auto;
   max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo para la sección principal del producto */
@@ -19,7 +21,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 40px;
 }
 
@@ -57,15 +59,26 @@ body {
   margin-bottom: 15px;
 }
 
-.product-info .category, .product-info .stock, .product-info .ratings {
+.product-info .category, 
+.product-info .size,
+.product-info .dimensions, 
+.product-info .material, 
+.product-info .details, 
+.product-info .closures,
+.product-info .colors {
   font-size: 1.1rem;
   color: #333;
   margin-bottom: 10px;
 }
 
-.product-info .ratings {
+.product-info .colors {
   font-weight: bold;
-  color: #f5a623;
+}
+
+.colors {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .product-info .btn-add-cart {
@@ -113,6 +126,7 @@ body {
   transform: scale(1.1);
 }
 
+
 /* Ajustes para móviles */
 @media (max-width: 768px) {
   .product-main {
@@ -146,4 +160,46 @@ body {
     width: 120px;
     height: 120px;
   }
+}
+
+
+/* Estilos para los círculos de color */
+.color-circle {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid darkgray;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.color-circle:hover {
+  transform: scale(1.2);
+  border-color: #ccc;
+}
+
+/* Tooltip para mostrar el nombre del color */
+.color-circle::after {
+  content: attr(data-color-name);
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.color-circle:hover::after {
+  opacity: 1;
 }

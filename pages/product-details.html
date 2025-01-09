@@ -26,48 +26,65 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     $(document).ready(function() {
-      // Obtener el parámetro de la URL (id del producto)
       const urlParams = new URLSearchParams(window.location.search);
       const productId = urlParams.get('id');
 
-      // Cargar los productos desde el archivo JSON
       $.getJSON('../data/products.json', function(products) {
-        // Buscar el producto con el id correspondiente
         const product = products.find(p => p.id === productId);
-
-        // Si se encuentra el producto, mostrar sus detalles
+      
         if (product) {
-          const productDetails = `
-            <div class="product-main">
-              <img src="${product.image}" alt="${product.name}">
-              <div class="product-info">
-                <h1>${product.name}</h1>
-                <p class="price">${product.price}</p>
-                <p class="description">${product.description}</p>
-                <p class="category"><strong>Categoría:</strong> ${product.category}</p>
-                <p class="stock"><strong>En stock:</strong> ${product.stock} unidades</p>
-                <p class="ratings"><strong>Calificación:</strong> ${product.ratings} estrellas</p>
-                <button class="btn-add-cart" 
-                        data-id="${product.id}" 
-                        data-name="${product.name}" 
-                        data-price="${product.price}" 
-                        data-image="${product.image}">Añadir al Carrito</button>
+          $.getJSON('../data/colors.json', function(colorMap) {
+            const productDetails = `
+              <div class="product-main">
+                <img id="main-product-image" src="${product.image}" alt="${product.name}">
+                <div class="product-info">
+                  <h1>${product.name}</h1>
+                  <p class="price">S/ ${product.price}</p>
+                  <p class="description">${product.description}</p>
+                  <p class="category"><strong>Categoría:</strong> ${product.category}</p>
+                  <p class="size"><strong>Tamaño:</strong> ${product.size}</p>
+                  <p class="dimensions"><strong>Dimensiones:</strong> ${product.dimensions}</p>
+                  <p class="material"><strong>Material:</strong> Exterior - ${product.material.exterior}, Interior - ${product.material.interior}</p>
+                  <p class="details"><strong>Detalles:</strong> ${product.details.join(', ')}</p>
+                  <p class="closures"><strong>Cierres:</strong> ${product.closures}</p>
+                  <div class="colors">
+                    <strong>Colores Disponibles:</strong>
+                    ${product.colors.map(color => `<span class="color-circle" data-color-name="${color}" style="background-color: ${colorMap[color] || '#000'}"></span>`).join('')}
+                  </div>
+                  <button class="btn-add-cart" 
+                          data-id="${product.id}" 
+                          data-name="${product.name}" 
+                          data-price="${product.price}" 
+                          data-image="${product.image}">Añadir al Carrito</button>
+                </div>
               </div>
-            </div>
-            <div class="product-gallery">
-              <h3>Galería de Imágenes</h3>
-              <div class="gallery">
-                ${product.detailsImages.map(image => `<img src="${image}" alt="${product.name}">`).join('')}
+              <div class="product-gallery">
+                <h3>Galería de Imágenes</h3>
+                <div class="gallery">
+                  ${product.detailsImages.map(image => `<img class="gallery-image" src="${image}" alt="${product.name}">`).join('')}
+                </div>
               </div>
-            </div>
-          `;
-          $('#product-info').html(productDetails);
+            `;
+            $('#product-info').html(productDetails);
+      
+            // Añadir evento click a las imágenes de la galería
+            $('.gallery-image').on('click', function() {
+              const newSrc = $(this).attr('src');
+              $('#main-product-image').attr('src', newSrc);
+            });
+      
+            // Mostrar nombre del color al hacer hover o clic
+            $('.color-circle').hover(function() {
+              const colorName = $(this).data('color-name');
+              $(this).attr('title', colorName);
+            });
+          });
         } else {
           $('#product-info').html('<p>Producto no encontrado.</p>');
         }
-      });
+      });      
     });
   </script>
-  <script src="../assets/js/script.js"></script> <!-- Cargar script.js aquí -->
+  <script src="../assets/js/script.js"></script>
 </body>
 </html>

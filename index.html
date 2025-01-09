@@ -14,8 +14,8 @@
   <!-- Vincular los estilos de la página de inicio -->
   <link rel="stylesheet" href="assets/css/pages/index.css">
 
-    <!-- Incluir la fuente "Bodoni Moda" de Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Incluir la fuente "Bodoni Moda" de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Asegúrate de incluir jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -70,13 +70,13 @@
 
       // Cargar los productos desde el archivo JSON
       $.getJSON('data/products.json', function(products) {
-        // Recorrer cada producto y crear la tarjeta de producto
-        products.forEach(function(product) {
+        // Mostrar solo los 3 primeros productos (puffers)
+        products.slice(0, 3).forEach(function(product) {
           var productCard = `
             <div class="product-card">
               <img src="${product.image}" alt="${product.name}">
               <h3>${product.name}</h3>
-              <p>${product.price}</p>
+              <p>S/ ${product.price}</p>
               <a href="pages/product-details.html?id=${product.id}" class="btn-secondary">Ver Detalles</a>
             </div>
           `;
@@ -86,6 +86,6 @@
       });
     });
   </script>
-  <script src="../assets/js/script.js"></script> <!-- Cargar script.js aquí -->
+  <script src="assets/js/script.js"></script> <!-- Cargar script.js aquí -->
 </body>
 </html>

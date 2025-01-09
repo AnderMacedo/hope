@@ -1,43 +1,223 @@
 [
-    {
-      "id": "bag-grecia",
-      "name": "Bag Grecia",
-      "price": "$50.00",
-      "description": "Bolso mediano de estilo Grecia, hecho a mano con materiales de alta calidad. Perfecto para cualquier ocasión.",
-      "image": "../assets/images/bag-mediana-grecia.png",
-      "detailsImages": [
-        "../assets/images/bag-mediana-grecia.png"
-      ],
-      "category": "bolsos",
-      "stock": 10,
-      "ratings": 4.5
+  {
+    "id": "minipuffer-lola",
+    "name": "Minipuffer Lola",
+    "price": "55",
+    "description": "Ideal para una salida casual, caben más que esenciales y agendas A5.",
+    "image": "../assets/images/minipuffer-lola.png",
+    "detailsImages": [
+      "../assets/images/minipuffer-lola.png",
+      "../assets/images/minipuffer-lola-2.png",
+      "../assets/images/minipuffer-lola-3.png",
+      "../assets/images/minipuffer-lola-4.png",
+      "../assets/images/minipuffer-lola-5.png"
+    ],
+    "category": "puffers",
+    "dimensions": "24cm x 24cm",
+    "size": "Pequeño",
+    "material": {
+      "exterior": "Tela Boomber de alta calidad",
+      "interior": "Totalmente forrado impermeable"
     },
-    {
-      "id": "maxipuffer-atenea",
-      "name": "Maxi Puffer Atenea",
-      "price": "$120.00",
-      "description": "Chaqueta estilo puffer con un diseño único y elegante. Ideal para los días fríos y modernos.",
-      "image": "../assets/images/maxipuffer-atenea.png",
-      "detailsImages": [
-        "../assets/images/maxipuffer-atenea.png"
-      ],
-      "category": "puffers",
-      "stock": 5,
-      "ratings": 4.8
+    "details": [
+      "Dos bolsillos internos",
+      "Bolsillo con cierre",
+      "Portabotella",
+      "Portallaves",
+      "Correa crossbody de nailon espiga, 2.5cm de ancho"
+    ],
+    "closures": "Avíos y cierres plateados de excelente calidad",
+    "colors": ["Camel", "Crema", "Plomo rata", "Verde oliva", "Celeste", "Rosado", "Topo", "Negro"]
+  },
+  {
+    "id": "puffer-jael",
+    "name": "Puffer Mediana Jael",
+    "price": "75",
+    "description": "Ideal para universidad, trabajo, etc. Para laptop de 14p. y cuadernos anillados A4.",
+    "image": "../assets/images/puffer-jael.png",
+    "detailsImages": [
+      "../assets/images/puffer-jael.png"
+    ],
+    "category": "puffers",
+    "dimensions": "47cm x 30cm",
+    "size": "Mediano",
+    "material": {
+      "exterior": "Tela Boomber de alta calidad",
+      "interior": "Totalmente forrado impermeable"
     },
-    {
-      "id": "minibag-lola",
-      "name": "Mini Bag Lola",
-      "price": "$40.00",
-      "description": "Mini bolso de mano con detalles únicos y delicados. Hecho artesanalmente para darle un toque único a tu outfit.",
-      "image": "../assets/images/minibag-lola.png",
-      "detailsImages": [
-        "../assets/images/minibag-lola.png",
-        "../assets/images/minibag-lola-2.png"
-      ],
-      "category": "bolsos",
-      "stock": 15,
-      "ratings": 4.3
-    }
-  ]
-  
+    "details": [
+      "Dos bolsillos internos",
+      "Bolsillo interno con cierre",
+      "Bolsillo externo con cierre",
+      "Portalaptop",
+      "Portabotella",
+      "Portallaves",
+      "Correa crossbody de nailon espiga, 3.8cm de ancho"
+    ],
+    "closures": "Avíos y cierres plateados de excelente calidad",
+    "colors": ["Camel", "Crema", "Plomo rata", "Verde oliva", "Celeste", "Rosado", "Topo", "Negro"]
+  },
+  {
+    "id": "puffer-sharon",
+    "name": "Puffer Jumbo Sharon",
+    "price": "95",
+    "description": "Ideal para universidad, trabajo, gym, etc. Para laptop de hasta 17p. y folders A3.",
+    "image": "../assets/images/puffer-sharon.png",
+    "detailsImages": [
+      "../assets/images/puffer-sharon.png"
+    ],
+    "category": "puffers",
+    "dimensions": "60cm x 34cm",
+    "size": "Grande",
+    "material": {
+      "exterior": "Tela Boomber de alta calidad",
+      "interior": "Totalmente forrado impermeable"
+    },
+    "details": [
+      "Dos bolsillos internos",
+      "Bolsillo interno con cierre",
+      "Bolsillos externos con cierre y botón",
+      "Portalaptop",
+      "Portabotella",
+      "Portallaves",
+      "Correa crossbody de nailon espiga, 3.8cm de ancho"
+    ],
+    "closures": "Avíos y cierres plateados de excelente calidad",
+    "colors": ["Camel", "Crema", "Plomo rata", "Verde oliva", "Celeste", "Rosado", "Topo", "Negro"]
+  },
+  {
+    "id": "baguette-tulipan",
+    "name": "Cartera Baguette Tulipán",
+    "price": "120",
+    "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
+    "image": "../assets/images/baguette-tulipan.png",
+    "detailsImages": [
+      "../assets/images/baguette-tulipan.png"
+    ],
+    "category": "bags",
+    "dimensions": "31cm x 24cm",
+    "size": "Mediano",
+    "material": {
+      "exterior": "Bio cuero de alta calidad, cruelty free",
+      "interior": "Totalmente forrado impermeable"
+    },
+    "details": [
+      "Bolsillo frontal",
+      "Bolsillo externo con cierre",
+      "Bolsillo interno con cierre con marco",
+      "Portatablet hasta 11p",
+      "Portacelular",
+      "Portalapiceros",
+      "Portallaves",
+      "Correa crossbody de bio cuero, 2.5cm de ancho"
+    ],
+    "closures": "Avíos y cierres dorados de excelente calidad",
+    "colors": ["Camel", "Crema", "Mostaza", "Beige", "Negro"]
+  },
+  {
+    "id": "baguette-rosa",
+    "name": "Cartera Baguette Rosa",
+    "price": "120",
+    "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
+    "image": "../assets/images/baguette-rosa.png",
+    "detailsImages": [
+      "../assets/images/baguette-rosa.png"
+    ],
+    "category": "bags",
+    "dimensions": "31cm x 24cm",
+    "size": "Mediano",
+    "material": {
+      "exterior": "Bio cuero de alta calidad, cruelty free",
+      "interior": "Totalmente forrado impermeable"
+    },
+    "details": [
+      "Bolsillo externo con cierre",
+      "Bolsillo interno con cierre con marco",
+      "Portatablet",
+      "Portacelular",
+      "Portalapiceros",
+      "Portallaves"
+    ],
+    "closures": "Avíos y cierres dorados de excelente calidad",
+    "colors": ["Camel", "Crema", "Mostaza", "Beige", "Negro"]
+  },
+  {
+    "id": "baguette-fold",
+    "name": "Cartera Baguette Fold",
+    "price": "120",
+    "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
+    "image": "../assets/images/baguette-fold.png",
+    "detailsImages": [
+      "../assets/images/baguette-fold.png"
+    ],
+    "category": "bags",
+    "dimensions": "31cm x 24cm",
+    "size": "Mediano",
+    "material": {
+      "exterior": "Bio cuero de alta calidad, cruelty free",
+      "interior": "Totalmente forrado impermeable"
+    },
+    "details": [
+      "Bolsillo externo con cierre",
+      "Bolsillo interno con cierre con marco",
+      "Portatablet",
+      "Portacelular",
+      "Portalapiceros",
+      "Portallaves"
+    ],
+    "closures": "Avíos y cierres dorados de excelente calidad",
+    "colors": ["Camel", "Crema", "Mostaza", "Beige", "Negro"]
+  },
+  {
+    "id": "baguette-emma",
+    "name": "Cartera Baguette Emma",
+    "price": "120",
+    "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
+    "image": "../assets/images/baguette-emma.png",
+    "detailsImages": [
+      "../assets/images/baguette-emma.png"
+    ],
+    "category": "bags",
+    "dimensions": "31cm x 24cm",
+    "size": "Mediano",
+    "material": {
+      "exterior": "Bio cuero de alta calidad, cruelty free",
+      "interior": "Totalmente forrado impermeable"
+    },
+    "details": [
+      "Bolsillo interno con cierre con marco",
+      "Portatablet",
+      "Portacelular",
+      "Portalapiceros",
+      "Portallaves"
+    ],
+    "closures": "Avíos y cierres dorados de excelente calidad",
+    "colors": ["Camel", "Crema", "Mostaza", "Beige", "Negro"]
+  },
+  {
+    "id": "baguette-girasol",
+    "name": "Cartera Baguette Girasol",
+    "price": "120",
+    "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
+    "image": "../assets/images/baguette-girasol.png",
+    "detailsImages": [
+      "../assets/images/baguette-girasol.png"
+    ],
+    "category": "bags",
+    "dimensions": "31cm x 24cm",
+    "size": "Mediano",
+    "material": {
+      "exterior": "Bio cuero de alta calidad, cruelty free",
+      "interior": "Totalmente forrado impermeable"
+    },
+    "details": [
+      "Bolsillo interno con cierre con marco",
+      "Portatablet",
+      "Portacelular",
+      "Portalapiceros",
+      "Portallaves"
+    ],
+    "closures": "Avíos y cierres dorados de excelente calidad",
+    "colors": ["Camel", "Crema", "Mostaza", "Beige", "Negro"]
+  }
+]

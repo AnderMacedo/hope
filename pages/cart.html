@@ -52,38 +52,39 @@
       // Cargar el footer
       $("#footer").load("../components/footer.html");
   
-        // Función para actualizar el carrito
-        function updateCart() {
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
-            let cartItemsContainer = $("#cart-items");
-            cartItemsContainer.empty();
+      // Función para actualizar el carrito
+      function updateCart() {
+          let cart = JSON.parse(localStorage.getItem('cart')) || [];
+          let cartItemsContainer = $("#cart-items");
+          cartItemsContainer.empty();
+          
+          let total = 0;
+          
+          cart.forEach(function(item) {
+            if (item.price && item.quantity) {
+                // Convertir item.price a string antes de usar replace
+                let itemTotal = parseFloat(String(item.price).replace('$', '').replace(',', '')) * item.quantity;
+                total += itemTotal;
             
-            let total = 0;
-            
-            cart.forEach(function(item) {
-                if (item.price && item.quantity) {
-                    let itemTotal = parseFloat(item.price.replace('$', '').replace(',', '')) * item.quantity;
-                    total += itemTotal;
-                
-                    let cartItem = `
-                        <div class="cart-item">
-                            <img src="${item.image}" alt="${item.name}">
-                            <div class="cart-item-details">
-                                <h3>${item.name}</h3>
-                                <p>${item.price}</p>
-                                <p>Cantidad: ${item.quantity}</p>
-                            </div>
-                            <div class="cart-item-remove">
-                                <button class="btn-remove" data-id="${item.id}">Eliminar</button>
-                            </div>
+                let cartItem = `
+                    <div class="cart-item">
+                        <img src="${item.image}" alt="${item.name}">
+                        <div class="cart-item-details">
+                            <h3>${item.name}</h3>
+                            <p>S/ ${item.price}</p>
+                            <p>Cantidad: ${item.quantity}</p>
                         </div>
-                    `;
-                    cartItemsContainer.append(cartItem);
-                }
-            });
-        
-            $("#cart-total").text(`Total: $${total.toFixed(2)}`);
-        }
+                        <div class="cart-item-remove">
+                            <button class="btn-remove" data-id="${item.id}">Eliminar</button>
+                        </div>
+                    </div>
+                `;
+                cartItemsContainer.append(cartItem);
+            }
+        });
+      
+        $("#cart-total").text(`Total: S/ ${total.toFixed(2)}`);
+      }
     
   
       // Llamar a la función para actualizar el carrito
@@ -136,13 +137,13 @@
       // Recorrer el carrito y crear el mensaje
       cart.forEach(function(item) {
           if (item.price && item.quantity) {
-              let itemTotal = parseFloat(item.price.replace('$', '').replace(',', '')) * item.quantity;
+              let itemTotal = item.price* item.quantity;
               total += itemTotal;
               message += `${item.name} - ${item.price} x${item.quantity}\n`;
           }
       });
 
-      message += `\nTotal: $${total.toFixed(2)}\n\nEspero su respuesta.`;
+      message += `\nTotal: S/ ${total.toFixed(2)}\n\nEspero su respuesta.`;
 
       // Crear el enlace de WhatsApp (reemplazar con el número de teléfono de la persona)
       let phoneNumber = "51987042713"; // Cambia por el número de WhatsApp real
