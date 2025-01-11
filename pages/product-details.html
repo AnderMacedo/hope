@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hope | Detalles del Producto</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/pages/product-details.css">
-    <link rel="stylesheet" href="../assets/css/components/navbar.css">
-    <link rel="stylesheet" href="../assets/css/components/footer.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hope | Detalles del Producto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/pages/product-details.css">
+  <link rel="stylesheet" href="../assets/css/components/navbar.css">
+  <link rel="stylesheet" href="../assets/css/components/footer.css">
+  <!--GoogleFonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!--GoogleFonts-->
 </head>
 <body>
   <div id="navbar"></div>
@@ -41,12 +46,14 @@
                   <h1>${product.name}</h1>
                   <p class="price">S/ ${product.price}</p>
                   <p class="description">${product.description}</p>
-                  <p class="category"><strong>Categoría:</strong> ${product.category}</p>
-                  <p class="size"><strong>Tamaño:</strong> ${product.size}</p>
-                  <p class="dimensions"><strong>Dimensiones:</strong> ${product.dimensions}</p>
-                  <p class="material"><strong>Material:</strong> Exterior - ${product.material.exterior}, Interior - ${product.material.interior}</p>
-                  <p class="details"><strong>Detalles:</strong> ${product.details.join(', ')}</p>
-                  <p class="closures"><strong>Cierres:</strong> ${product.closures}</p>
+                  <div class="product-specs">
+                    <p class="category"><strong>Categoría:</strong> ${product.category}</p>
+                    <p class="size"><strong>Tamaño:</strong> ${product.size}</p>
+                    <p class="dimensions"><strong>Dimensiones:</strong> ${product.dimensions}</p>
+                    <p class="material"><strong>Material:</strong> Exterior - ${product.material.exterior}, Interior - ${product.material.interior}</p>
+                    <p class="details"><strong>Detalles:</strong> ${product.details.join(', ')}</p>
+                    <p class="closures"><strong>Cierres:</strong> ${product.closures}</p>
+                  </div>
                   <div class="colors">
                     <strong>Colores Disponibles:</strong>
                     ${product.colors.map(color => `<span class="color-circle" data-color-name="${color}" style="background-color: ${colorMap[color] || '#000'}"></span>`).join('')}

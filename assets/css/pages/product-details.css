@@ -66,7 +66,7 @@ body {
 .product-info .details, 
 .product-info .closures,
 .product-info .colors {
-  font-size: 1.1rem;
+  font-size: 16px;
   color: #333;
   margin-bottom: 10px;
 }
@@ -96,6 +96,11 @@ body {
   background-color: #f5a623;
 }
 
+.product-specs {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.5px;
+}
 /* Estilos para la galería de imágenes */
 .product-gallery {
   margin-top: 40px;

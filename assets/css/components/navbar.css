@@ -1,6 +1,6 @@
 /* navbar.css */
 .navbar {
-  background-color: #eee3c5;
+  background-color: #f1e6d9;
   /*padding: 10px 0;*/
   position: fixed;
   width: 100%;
@@ -8,6 +8,7 @@
   left: 0;
   z-index: 1000;
   transition: background-color 0.3s ease; /* Transición suave para el cambio de fondo */
+  height: 80px;
 }
 
 .navbar.expanded {

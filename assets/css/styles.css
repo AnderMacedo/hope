@@ -6,8 +6,8 @@
 }
 
 main{
-  margin-top: 68px;
-  margin-bottom: 68px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 body {
@@ -40,6 +40,7 @@ nav {
 }
 
 nav a {
+  display: flex;
   text-decoration: none;
   color: #4a4a4a;
   font-weight: 500;
