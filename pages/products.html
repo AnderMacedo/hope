@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hope | Productos</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="../assets/css/styles.css">
   <link rel="stylesheet" href="../assets/css/pages/products.css">
 </head>
@@ -38,7 +39,8 @@
   <div id="sidebar-categories" class="sidebar-categories">
     <div class="sidebar-header">
       <h2>Categorías</h2>
-      <button id="close-sidebar" class="close-btn"><i class="fas fa-times"></i></button>
+      <button id="close-sidebar" class="close-btn"><i class="fa-solid fa-circle-chevron-left" style="color: #8c754a;"></i>
+      </button>
     </div>
     <ul id="category-list" class="category-list">
       <li><button class="category-btn" data-category="all">Todos</button></li>
@@ -76,8 +78,9 @@
               <img src="${product.image}" alt="${product.name}">
               <h3>${product.name}</h3>
               <p>S/ ${product.price}</p>
-              <a href="product-details.html?id=${product.id}" class="btn-secondary">Ver Detalles</a>
-              <button class="btn-add-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.image}">Añadir al Carrito</button>
+              <div class="container-buttons">
+                <a href="product-details.html?id=${product.id}" class="btn-secondary">Detalles</a>
+                <button class="btn-add-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.image}">Añadir al Carrito</button>
             </div>
           `;
           $('#product-grid').append(productCard);

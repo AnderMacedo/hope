@@ -1,4 +1,6 @@
 /* General Reset */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -95,7 +97,6 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  border: 1px solid #e0d6cb;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -109,7 +110,7 @@ nav a:hover {
 .product-card img {
   width: 100%;
   height: auto;
-  max-height: 260px;
+  /*max-height: 260px;*/
 }
 
 .product-card .info {

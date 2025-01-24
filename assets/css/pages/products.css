@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Estilo general para la página de productos */
 .products-page {
   padding: 20px;
@@ -14,8 +18,12 @@
 }
 
 .title {
+  font-family: "Poppins", serif;
   padding: 20px;
   font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 40px;
 }
 
 /* Contenedor de la cuadrícula de productos */
@@ -31,10 +39,10 @@
 .product-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
   overflow: hidden;
   width: 100%;
   max-width: 300px;
@@ -53,35 +61,47 @@
   width: 100%;
   height: auto;
   border-radius: 8px;
-  max-height: 260px;
-  overflow: unset;
+  /*max-height: 260px;*/
+  overflow: hidden;
 }
 
 /* Nombre del producto */
 .product-card h3 {
+  font-family: "Libre Baskerville", serif;
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 15px;
   color: #333;
+  letter-spacing: -0.5px;
 }
 
 /* Precio del producto */
 .product-card p {
   font-size: 1rem;
-  color: #555;
+  color: #8c754a;
   margin: 10px 0;
+  font-weight: 600;
 }
 
 /* Botón para ver detalles */
 .product-card .btn-secondary {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
+  background-color: #f3ebe0;
+  color: #8c754a;
+  padding: 5px 15px;
+  border-radius: 20px;
   text-decoration: none;
   display: inline-block;
   transition: background-color 0.3s;
   margin-top: 10px;
+  min-width: 127px;
+}
+
+.container-buttons{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 /* Efecto hover en el botón de ver detalles */
@@ -91,14 +111,15 @@
 
 /* Botón para añadir al carrito */
 .product-card .btn-add-cart {
-  background-color: #8c754a;
-  color: white;
+  background-color: #b5a483;
+  color: #fff;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 20px;
   border: none;
   cursor: pointer;
   margin-top: 10px;
   transition: background-color 0.3s;
+  min-width: 127px;
 }
 
 /* Efecto hover en el botón de añadir al carrito */
@@ -262,5 +283,13 @@
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); /* Ajuste dinámico de las columnas */
     gap: 15px;
     padding: 0 10px;
+  }
+
+  .btn-secondary, .btn-add-cart{
+    width: 100%;
+  }
+
+  .product-card{
+    padding: 15px;
   }
 }

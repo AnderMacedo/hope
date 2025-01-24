@@ -4,15 +4,19 @@
     "name": "Minipuffer Lola",
     "price": "55",
     "description": "Ideal para una salida casual, caben más que esenciales y agendas A5.",
-    "image": "../assets/images/minipuffer-lola.png",
+    "image": "../assets/images/MINIPUFFER/minipuffer-verde-oliva-1.png",
     "detailsImages": [
-      "../assets/images/minipuffer-lola.png",
-      "../assets/images/minipuffer-lola-2.png",
-      "../assets/images/minipuffer-lola-3.png",
-      "../assets/images/minipuffer-lola-4.png",
-      "../assets/images/minipuffer-lola-5.png"
+      "../assets/images/MINIPUFFER/minipuffer-verde-oliva-1.png",
+      "../assets/images/MINIPUFFER/minipuffer-plomo-rata-2.png",
+      "../assets/images/MINIPUFFER/minipuffer-crema-3.png",
+      "../assets/images/MINIPUFFER/minipuffer-camel-4.png",
+      "../assets/images/MINIPUFFER/minipuffer-topo-5.png",
+      "../assets/images/MINIPUFFER/minipuffer-celeste-6.png",
+      "../assets/images/MINIPUFFER/minipuffer-rosado-7.png",
+      "../assets/images/MINIPUFFER/mini-puffer-galeria-de-imagenes-extra-8.png",
+      "../assets/images/MINIPUFFER/mini-puffer-galeria-de-imagenes-extra-9.png"
     ],
-    "category": "puffers",
+    "category": "Puffers",
     "dimensions": "24cm x 24cm",
     "size": "Pequeño",
     "material": {
@@ -34,11 +38,18 @@
     "name": "Puffer Mediana Jael",
     "price": "75",
     "description": "Ideal para universidad, trabajo, etc. Para laptop de 14p. y cuadernos anillados A4.",
-    "image": "../assets/images/puffer-jael.png",
+    "image": "../assets/images/PUFFER_MEDIANA/puffer-mediana-negro-1.png",
     "detailsImages": [
-      "../assets/images/puffer-jael.png"
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-negro-1.png",
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-verde-oliva-2.png",
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-crema-3.png",
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-crema-3.png",
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-celeste-4.png",
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-topo-5.png",
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-camel-6.png",
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-rosado-7.png"
     ],
-    "category": "puffers",
+    "category": "Puffers",
     "dimensions": "47cm x 30cm",
     "size": "Mediano",
     "material": {
@@ -62,11 +73,16 @@
     "name": "Puffer Jumbo Sharon",
     "price": "95",
     "description": "Ideal para universidad, trabajo, gym, etc. Para laptop de hasta 17p. y folders A3.",
-    "image": "../assets/images/puffer-sharon.png",
+    "image": "../assets/images/PUFFER_JUMBO/puffer-jumbo-crema-1.png",
     "detailsImages": [
-      "../assets/images/puffer-sharon.png"
+      "../assets/images/PUFFER_JUMBO/puffer-jumbo-crema-1.png",
+      "../assets/images/PUFFER_JUMBO/puffer-jumbo-verde-oliva-2.png",
+      "../assets/images/PUFFER_JUMBO/puffer-jumbo-plomo-rata-3.png",
+      "../assets/images/PUFFER_JUMBO/puffer-jumbo-camel-6.png",
+      "../assets/images/PUFFER_JUMBO/puffer-jumbo-verde-oliva-para-galeria-de-imagenes-de-la-puffer-jumbo.png",
+      "../assets/images/PUFFER_JUMBO/puffer-jumbo-verde-oliva-y-plomo-rata-para-galeria-de-imagenes-de-la-puffer-jumbo.png"
     ],
-    "category": "puffers",
+    "category": "Puffers",
     "dimensions": "60cm x 34cm",
     "size": "Grande",
     "material": {
@@ -90,11 +106,16 @@
     "name": "Cartera Baguette Tulipán",
     "price": "120",
     "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
-    "image": "../assets/images/baguette-tulipan.png",
+    "image": "../assets/images/BAGUETTES/baguette-tulipan-beige-9.png",
     "detailsImages": [
-      "../assets/images/baguette-tulipan.png"
+      "../assets/images/BAGUETTES/baguette-tulipan-beige-9.png",
+      "../assets/images/BAGUETTES/baguette-tulipan-maiz-10.png",
+      "../assets/images/BAGUETTES//baguette-tulipan-maiz-para-galeria-de-imagenes-de-baguette-tulipan-11.png",
+      "../assets/images/BAGUETTES/baguette-tulipan-galeria-de-imagenes-extra.png",
+      "../assets/images/BAGUETTES/baguette-tulipan-galeria-de-imagenes-extra-1.png",
+      "../assets/images/BAGUETTES/baguette-tulipan-galeria-de-imagenes-extra-2.png"
     ],
-    "category": "bags",
+    "category": "Baguettes",
     "dimensions": "31cm x 24cm",
     "size": "Mediano",
     "material": {
@@ -119,11 +140,12 @@
     "name": "Cartera Baguette Rosa",
     "price": "120",
     "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
-    "image": "../assets/images/baguette-rosa.png",
+    "image": "../assets/images/BAGUETTES/baguette-rosa-camel-7.png",
     "detailsImages": [
-      "../assets/images/baguette-rosa.png"
+      "../assets/images/BAGUETTES/baguette-rosa-camel-7.png",
+      "../assets/images/BAGUETTES/baguette-rosa-para-galeria-de-imagenes-de-baguette-rosa-8.png"
     ],
-    "category": "bags",
+    "category": "Baguettes",
     "dimensions": "31cm x 24cm",
     "size": "Mediano",
     "material": {
@@ -146,11 +168,12 @@
     "name": "Cartera Baguette Fold",
     "price": "120",
     "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
-    "image": "../assets/images/baguette-fold.png",
+    "image": "../assets/images/BAGUETTES/baguette-fold-negro-12.png",
     "detailsImages": [
-      "../assets/images/baguette-fold.png"
+      "../assets/images/BAGUETTES/baguette-fold-negro-12.png",
+      "../assets/images/BAGUETTES/baguette-fold-negro-para-galeria-de-imagenes-de-baguette-fold-12.png"
     ],
-    "category": "bags",
+    "category": "Baguettes",
     "dimensions": "31cm x 24cm",
     "size": "Mediano",
     "material": {
@@ -173,11 +196,15 @@
     "name": "Cartera Baguette Emma",
     "price": "120",
     "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
-    "image": "../assets/images/baguette-emma.png",
+    "image": "../assets/images/BAGUETTES/baguette-emma-crema-4.png",
     "detailsImages": [
-      "../assets/images/baguette-emma.png"
+      "../assets/images/BAGUETTES/baguette-emma-crema-4.png",
+      "../assets/images/BAGUETTES/baguette-emma-negro-5.png",
+      "../assets/images/BAGUETTES/baguette-emma-galeria-de-imagenes-extra.png",
+      "../assets/images/BAGUETTES/baguette-emma-negro-para-galeria-de-imagenes-de-baguette-emma-13.png",
+      "../assets/images/BAGUETTES/baguette-emma-combinaciones-para-galeria-de-imagenes-6.png"
     ],
-    "category": "bags",
+    "category": "Baguettes",
     "dimensions": "31cm x 24cm",
     "size": "Mediano",
     "material": {
@@ -199,11 +226,12 @@
     "name": "Cartera Baguette Girasol",
     "price": "120",
     "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
-    "image": "../assets/images/baguette-girasol.png",
+    "image": "../assets/images/BAGUETTES/baguette-girasol-maiz-1.png",
     "detailsImages": [
-      "../assets/images/baguette-girasol.png"
+      "../assets/images/BAGUETTES/baguette-girasol-maiz-1.png",
+      "../assets/images/BAGUETTES/baguette-girasol-beige-2.png"
     ],
-    "category": "bags",
+    "category": "Baguettes",
     "dimensions": "31cm x 24cm",
     "size": "Mediano",
     "material": {

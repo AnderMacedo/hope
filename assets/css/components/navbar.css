@@ -65,8 +65,8 @@
 
 .navbar-cart .cart-count {
   position: absolute;
-  top: -5px;
-  right: -8px;
+  top: -12px;
+  right: -15px;
   background-color: #e57373;
   color: white;
   border-radius: 50%;
