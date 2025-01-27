@@ -222,17 +222,22 @@
     "colors": ["Camel", "Crema", "Mostaza", "Beige", "Negro"]
   },
   {
-    "id": "baguette-girasol",
-    "name": "Cartera Baguette Girasol",
-    "price": "120",
-    "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
-    "image": "../assets/images/BAGUETTES/baguette-girasol-maiz-1.png",
+    "id": "romantic-bag",
+    "name": "Cartera Romantic Bag",
+    "price": "79.99",
+    "description": "Una elegante y sofisticada cartera para cualquier ocasión.",
+    "image": "../assets/images/ROMANTIC_BAG/romantic-bag-portada-7.png",
     "detailsImages": [
-      "../assets/images/BAGUETTES/baguette-girasol-maiz-1.png",
-      "../assets/images/BAGUETTES/baguette-girasol-beige-2.png"
+      "../assets/images/ROMANTIC_BAG/romantic-bag-portada-7.png",
+      "../assets/images/ROMANTIC_BAG/romantic-bag-crema-galeria-de-fotos-2.png",
+      "../assets/images/ROMANTIC_BAG/romantic-bag-crema-galeria-de-fotos-3.png",
+      "../assets/images/ROMANTIC_BAG/romantic-bag-rosado-galeria-de-fotos-3.png",
+      "../assets/images/ROMANTIC_BAG/romantic-bag-negro-galeria-de-fotos-5.png",
+      "../assets/images/ROMANTIC_BAG/romantic-bag-negro-galeria-de-fotos-6.png",
+      "../assets/images/ROMANTIC_BAG/romantic-bag-galeria-de-imagenes-extra.png"
     ],
-    "category": "Baguettes",
-    "dimensions": "31cm x 24cm",
+    "category": "Romantic bag",
+    "dimensions": "30cm x 20cm",
     "size": "Mediano",
     "material": {
       "exterior": "Cuero vegano de alta calidad, cruelty free",
@@ -246,6 +251,6 @@
       "Portallaves"
     ],
     "closures": "Avíos y cierres dorados de excelente calidad",
-    "colors": ["Camel", "Crema", "Mostaza", "Beige", "Negro"]
-  }
+    "colors": ["Rosado", "Crema", "Negro"]
+  }  
 ]

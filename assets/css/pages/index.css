@@ -127,12 +127,12 @@
 }
 
 .product-card .btn-secondary {
-  background-color: #9b9b9b;
-  color: white;
+  background-color: #f1e5d5;
+  color: #b5a483;
   padding: 8px 16px;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 18px;
 }
 
 .btn-primary {

@@ -1,6 +1,5 @@
 /* General Reset */
 
-
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@ main{
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
   background-color: #f7f4eb; /* Beige background */
   color: #4a4a4a; /* Neutral gray for text */
   line-height: 1.6;
@@ -41,13 +40,6 @@ nav {
   gap: 1.5rem;
 }
 
-nav a {
-  display: flex;
-  text-decoration: none;
-  color: #4a4a4a;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
 
 nav a:hover {
   color: #8c6f56; /* Darker beige */
