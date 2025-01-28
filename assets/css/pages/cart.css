@@ -145,6 +145,26 @@
   gap: 10px;
 }
 
+/*Cart vacio*/
+.empty-cart-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.empty-cart-message p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.empty-cart-message .btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b5a483;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 @media (max-width: 654px){
   .cart-actions{
     width: 100%;

@@ -13,6 +13,9 @@
 
   <!-- Vincular los estilos específicos del carrito -->
   <link rel="stylesheet" href="../assets/css/pages/cart.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/images/icons/logo-icon.png" type="image/x-icon">
 </head>
 <body>
 
@@ -36,6 +39,13 @@
           <a href="#" id="btn-proceed" class="btn-primary">Proceder al Pago</a>
         </div>
       </div>
+
+      <!-- Contenedor para el mensaje cuando el carrito está vacío -->
+      <div id="empty-cart-message" class="empty-cart-message" style="display: none;">
+        <p>No has añadido productos al carrito aún. ¡Descubre nuestros productos!</p>
+        <a href="../pages/products.html" class="btn-primary">Ver Productos</a>
+      </div>
+      
     </section>
   </main>
 
@@ -86,6 +96,13 @@
         });
       
         $("#cart-total").text(`Total: S/ ${total.toFixed(2)}`);
+
+        // Mostrar el mensaje cuando el carrito está vacío
+        if (cart.length === 0) {
+          $("#empty-cart-message").show();
+        } else {
+          $("#empty-cart-message").hide();
+        }
       }
     
   
@@ -148,7 +165,7 @@
       message += `\nTotal: S/ ${total.toFixed(2)}\n\nEspero su respuesta.`;
 
       // Crear el enlace de WhatsApp (reemplazar con el número de teléfono de la persona)
-      let phoneNumber = "51987042713"; // Cambia por el número de WhatsApp real
+      let phoneNumber = "51901175621"; // Cambia por el número de WhatsApp real
       let whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
       // Redirigir al chat de WhatsApp

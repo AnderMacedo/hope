@@ -43,7 +43,6 @@
       "../assets/images/PUFFER_MEDIANA/puffer-mediana-negro-1.png",
       "../assets/images/PUFFER_MEDIANA/puffer-mediana-verde-oliva-2.png",
       "../assets/images/PUFFER_MEDIANA/puffer-mediana-crema-3.png",
-      "../assets/images/PUFFER_MEDIANA/puffer-mediana-crema-3.png",
       "../assets/images/PUFFER_MEDIANA/puffer-mediana-celeste-4.png",
       "../assets/images/PUFFER_MEDIANA/puffer-mediana-topo-5.png",
       "../assets/images/PUFFER_MEDIANA/puffer-mediana-camel-6.png",
@@ -224,7 +223,7 @@
   {
     "id": "romantic-bag",
     "name": "Cartera Romantic Bag",
-    "price": "79.99",
+    "price": "76",
     "description": "Una elegante y sofisticada cartera para cualquier ocasión.",
     "image": "../assets/images/ROMANTIC_BAG/romantic-bag-portada-7.png",
     "detailsImages": [
@@ -252,5 +251,35 @@
     ],
     "closures": "Avíos y cierres dorados de excelente calidad",
     "colors": ["Rosado", "Crema", "Negro"]
-  }  
+  },
+  {
+    "id": "straps-desing",
+    "name": "Straps con diseño",
+    "price": "30",
+    "description": "Un elegante strap ideal para darle un toque único y resaltar tu bolso.",
+    "image": "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-galeria-de-imagenes-extra-7.png",
+    "detailsImages": [
+      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-zebra-1.png",
+      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-flechas-2.png",
+      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-colibri-3.png",
+      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-zebra-dorada-4.png",
+      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-vaca-5.png",
+      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-galeria-de-imagenes-extra-6.png",
+      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-galeria-de-imagenes-extra-7.png"
+    ],
+    "category": "Straps",
+    "dimensions": "3.8cm de ancho x 1.50m de largo",
+    "size": "Ajustable",
+    "material": {
+      "exterior": "Nailon satinado ",
+      "interior": ""
+    },
+    "details": [
+      "Avíos Zamac inoxidables de excelente calidad",
+      "Regulable para usar largo del hombro o cruzado",
+      "Disponible en multiples diseños: Zebra, flechas, colibri, vaca"
+    ],
+    "closures": "Hebillas de acero inoxidable",
+    "colors": ["Diseños de Zebra, Flechas, Colibri, Vaca"]
+  }
 ]
