@@ -150,6 +150,7 @@
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.3s, opacity 0.3s ease;
+  z-index: 999; /* Cambiar el z-index de la superposición para que esté debajo del sidebar */
 }
 
 .sidebar-overlay.active {
@@ -200,7 +201,7 @@
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: left 0.3s ease;
-  z-index: 1000;
+  z-index: 1000; /* Asegura que el sidebar esté encima de la superposición */
 }
 
 /* Cuando el sidebar está abierto */
