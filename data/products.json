@@ -221,6 +221,33 @@
     "colors": ["Camel", "Crema", "Mostaza", "Beige", "Negro"]
   },
   {
+    "id": "baguette-girasol",
+    "name": "Cartera Baguette Girasol",
+    "price": "120",
+    "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
+    "image": "../assets/images/BAGUETTES/baguette-girasol-maiz-1.png",
+    "detailsImages": [
+      "../assets/images/BAGUETTES/baguette-girasol-maiz-1.png",
+      "../assets/images/BAGUETTES/baguette-girasol-beige-2.png"
+    ],
+    "category": "bags",
+    "dimensions": "31cm x 24cm",
+    "size": "Mediano",
+    "material": {
+      "exterior": "Bio cuero de alta calidad, cruelty free",
+      "interior": "Totalmente forrado impermeable"
+    },
+    "details": [
+      "Bolsillo interno con cierre con marco",
+      "Portatablet",
+      "Portacelular",
+      "Portalapiceros",
+      "Portallaves"
+    ],
+    "closures": "Avíos y cierres dorados de excelente calidad",
+    "colors": ["Camel", "Crema", "Mostaza", "Beige", "Negro"]
+  },
+  {
     "id": "romantic-bag",
     "name": "Cartera Romantic Bag",
     "price": "76",
