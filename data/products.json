@@ -292,7 +292,7 @@
       "../assets/images/SET_PLAYERO/set_playero_tote_bag_ocean_1.png",
       "../assets/images/SET_PLAYERO/set_playero_tote_bag_ocean_5.png"
     ],
-    "category": "Playeros - Tote Bag Ocean",
+    "category": "Playeros",
     "dimensions": "55x35",
     "size": "Grande",
     "material": {
@@ -307,7 +307,8 @@
       "Porta llaves y portatomatodo",
       "Incluye correa crossbody regulable"
     ],
-    "closures": "Avíos plateados y cierre tractor de excelente calidad"
+    "closures": "Avíos plateados y cierre tractor de excelente calidad",
+    "colors": []
   },  
   {
     "id": "neceser-perla",
@@ -318,7 +319,7 @@
     "detailsImages": [
       "../assets/images/SET_PLAYERO/set_playero_nesecer_perla_4.png"
     ],
-    "category": "Playeros - Neceser Perla",
+    "category": "Playeros",
     "dimensions": "30x25",
     "size": "Pequeño",
     "material": {
@@ -329,7 +330,8 @@
       "Diseño de líneas en ondas bicolor",
       "Incrustaciones de perlas"
     ],
-    "closures": "Cierre tractor de excelente calidad"
+    "closures": "Cierre tractor de excelente calidad",
+    "colors": []
   },
   {
     "id": "morral-almeja",
@@ -340,7 +342,7 @@
     "detailsImages": [
       "../assets/images/SET_PLAYERO/set_playero_morral_almeja_3.png"
     ],
-    "category": "Playeros - Morral Almeja",
+    "category": "Playeros",
     "dimensions": "30x25",
     "size": "Pequeño",
     "material": {
@@ -353,7 +355,7 @@
       "Secretero posterior",
       "Interior con 3 bolsillos organizados"
     ],
-    "closures": "Cierre tractor y de nylon de excelente calidad"
+    "closures": "Cierre tractor y de nylon de excelente calidad",
+    "colors": []
   }
-
 ]

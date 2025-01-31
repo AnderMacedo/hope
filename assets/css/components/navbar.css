@@ -86,11 +86,6 @@
 
 /* Sidebar */
 
-
-.sidebar.open {
-  left: 0;
-}
-
 .sidebar-content {
   display: flex;
   flex-direction: column;
@@ -126,36 +121,6 @@
 
 .sidebar-cart {
   margin-top: auto;
-}
-
-.close-btn {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-/* Sidebar Overlay */
-.sidebar-overlay {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.3s, opacity 0.3s ease;
-  z-index: 999; /* Cambiar el z-index de la superposición para que esté debajo del sidebar */
-}
-
-.sidebar-overlay.active {
-  visibility: visible;
-  opacity: 1;
 }
 
 /* Responsive Styles */
@@ -216,6 +181,8 @@
 
 /* Botón de cierre */
 .close-btn {
+  background: none;
+  border: none;
   font-size: 30px;
   position: absolute;
   top: 10px;
