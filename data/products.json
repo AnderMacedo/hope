@@ -281,5 +281,79 @@
     ],
     "closures": "Hebillas de acero inoxidable",
     "colors": ["Diseños de Zebra, Flechas, Colibri, Vaca, Zebra Dorada"]
+  },
+  {
+    "id": "tote-bag-ocean",
+    "name": "Tote Bag Ocean",
+    "price": "57",
+    "description": "Ideal para esos días de playa y piscina, con un estilo veraniego perfecto para esta temporada. Con diseño artesanal y detalles únicos.",
+    "image": "../assets/images/SET_PLAYERO/set_playero_tote_bag_ocean_1.png",
+    "detailsImages": [
+      "../assets/images/SET_PLAYERO/set_playero_tote_bag_ocean_1.png",
+      "../assets/images/SET_PLAYERO/set_playero_tote_bag_ocean_5.png"
+    ],
+    "category": "Playeros - Tote Bag Ocean",
+    "dimensions": "55x35",
+    "size": "Grande",
+    "material": {
+      "exterior": "Lona tipo drill",
+      "interior": "Totalmente forrado impermeable"
+    },
+    "details": [
+      "Diseño artesanal exterior de trenzado y flecos",
+      "Incrustaciones de perlas",
+      "Secretero posterior",
+      "Interior con 4 bolsillos organizados",
+      "Porta llaves y portatomatodo",
+      "Incluye correa crossbody regulable"
+    ],
+    "closures": "Avíos plateados y cierre tractor de excelente calidad"
+  },  
+  {
+    "id": "neceser-perla",
+    "name": "Neceser Perla",
+    "price": "24",
+    "description": "Un neceser elegante con diseño de líneas en ondas bicolor e incrustaciones de perlas, ideal para llevar en tus playeros.",
+    "image": "../assets/images/SET_PLAYERO/set_playero_nesecer_perla_4.png",
+    "detailsImages": [
+      "../assets/images/SET_PLAYERO/set_playero_nesecer_perla_4.png"
+    ],
+    "category": "Playeros - Neceser Perla",
+    "dimensions": "30x25",
+    "size": "Pequeño",
+    "material": {
+      "exterior": "Lona tipo drill",
+      "interior": "Totalmente forrado impermeable"
+    },
+    "details": [
+      "Diseño de líneas en ondas bicolor",
+      "Incrustaciones de perlas"
+    ],
+    "closures": "Cierre tractor de excelente calidad"
+  },
+  {
+    "id": "morral-almeja",
+    "name": "Morral Almeja",
+    "price": "35",
+    "description": "Un morral pequeño con diseño de líneas y base tipo almeja, incrustaciones de perlas, y secretero posterior. Ideal para organizar tus pertenencias.",
+    "image": "../assets/images/SET_PLAYERO/set_playero_morral_almeja_3.png",
+    "detailsImages": [
+      "../assets/images/SET_PLAYERO/set_playero_morral_almeja_3.png"
+    ],
+    "category": "Playeros - Morral Almeja",
+    "dimensions": "30x25",
+    "size": "Pequeño",
+    "material": {
+      "exterior": "Lona tipo drill",
+      "interior": "Totalmente forrado impermeable"
+    },
+    "details": [
+      "Diseño de líneas y base tipo almeja",
+      "Incrustaciones de perlas",
+      "Secretero posterior",
+      "Interior con 3 bolsillos organizados"
+    ],
+    "closures": "Cierre tractor y de nylon de excelente calidad"
   }
+
 ]
