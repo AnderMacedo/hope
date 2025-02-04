@@ -19,7 +19,7 @@ body {
 /* Estilo para la sección principal del producto */
 .product-main {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
@@ -206,4 +206,72 @@ body {
 
 .color-circle:hover::after {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .btn-add-cart{
+    display: block; /* Mostrar el botón */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #ff6347; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .floating-btn:hover {
+    background-color: #ff4500; /* Color de fondo al pasar el ratón */
+  }
+}
+
+/* Estios para el carrusel*/
+.product-carousel {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 500px;
+  height: auto;
+}
+
+.product-carousel img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-prev, .slick-next {
+  color: #333;
+  font-size: 24px;
+  z-index: 1;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.slick-next {
+  right: 0 !important;
+}
+
+.slick-prev {
+  left: 0 !important;
+}
+
+.slick-next:before, .slick-prev:before {
+  font-size: 30px !important;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: #000;
+}
+
+.slick-list {
+  height: auto !important;
 }
