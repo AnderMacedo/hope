@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro de Reclamaciones</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/pages/claim-book.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!--EmailJS-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!--SweetAlert2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main>
+    <div class="container">
+        <h2>Libro de reclamaciones</h2>
+
+        <form id="reclamoForm">
+            <h3>Identificación del consumidor reclamante</h3>
+        
+            <div class="form-group">
+                <label>Nombre *</label>
+                <input type="text" name="nombre" required>
+            </div>
+        
+            <div class="form-group">
+                <label>Primer apellido *</label>
+                <input type="text" name="apellido1" required>
+            </div>
+        
+            <div class="form-group">
+                <label>Segundo apellido *</label>
+                <input type="text" name="apellido2" required>
+            </div>
+        
+            <div class="form-group">
+                <label>Tipo de documentación *</label>
+                <select name="tipoDocumento" required>
+                    <option value="DNI">DNI</option>
+                    <option value="Carné de extranjería">Carné de extranjería</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                </select>
+            </div>
+        
+            <div class="form-group">
+                <label>Número de documento *</label>
+                <input type="text" name="numeroDocumento" required>
+            </div>
+        
+            <div class="form-group">
+                <label>Celular *</label>
+                <input type="text" name="celular" required>
+            </div>
+        
+            <div class="form-group">
+                <label>Departamento *</label>
+                <input type="text" name="departamento" required>
+            </div>
+        
+            <div class="form-group">
+                <label>Provincia *</label>
+                <input type="text" name="provincia" required>
+            </div>
+        
+            <div class="form-group">
+                <label>Distrito *</label>
+                <input type="text" name="distrito" required>
+            </div>
+        
+            <div class="form-group">
+                <label>Dirección *</label>
+                <input type="text" name="direccion" required>
+            </div>
+        
+            <div class="form-group">
+                <label>Correo electrónico *</label>
+                <input type="email" name="email" required>
+            </div>
+        
+            <div class="form-group radio-group">
+                <label>¿Eres menor de edad?</label>
+                <label><input type="radio" name="menorEdad" value="Si"> Sí</label>
+                <label><input type="radio" name="menorEdad" value="No" checked> No</label>
+            </div>
+        
+            <h3>Detalle del reclamo y orden del consumidor</h3>
+        
+            <div class="form-group">
+                <label>Tipo de reclamo *</label>
+                <select name="tipoReclamo" required>
+                    <option value="Reclamación">Reclamación</option>
+                    <option value="Queja">Queja</option>
+                </select>
+            </div>
+        
+            <div class="form-group">
+                <label>Nombre del producto *</label>
+                <input type="text" name="nombreProducto" required>
+            </div>
+        
+            <div class="form-group">
+                <label>Fecha de reclamo *</label>
+                <input type="date" name="fechaReclamo" required>
+            </div>
+        
+            <div class="form-group">
+                <label>Proveedor *</label>
+                <input type="text" name="proveedor" required>
+            </div>
+        
+            <div class="form-group">
+                <label>Monto reclamado (S/.)</label>
+                <input type="number" name="montoReclamado">
+            </div>
+        
+            <div class="form-group">
+                <label>Detalle del reclamo *</label>
+                <textarea name="detalleReclamo" rows="5" required></textarea>
+            </div>
+        
+            <button type="submit">Enviar Reclamo</button>
+        </form>        
+    </div>
+
+    </main>
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/claim-book.js"></script>
+</body>
+</html>

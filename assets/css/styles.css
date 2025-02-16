@@ -18,6 +18,13 @@ body {
   line-height: 1.6;
 }
 
+/*Para empujar el footer abajo*/
+.general-container {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 /* Header Styles */
 header {
   background-color: #d9cbbd; /* Soft beige */

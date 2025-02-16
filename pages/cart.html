@@ -18,39 +18,42 @@
   <link rel="icon" href="../assets/images/icons/logo-icon.ico" type="image/x-icon">
 </head>
 <body>
+  <div class= "general-container">
+    <!-- Incluir el navbar -->
+    <div id="navbar"></div>
 
-  <!-- Incluir el navbar -->
-  <div id="navbar"></div>
+    <!-- Main Content -->
+    <main>
+      <section class="cart">
+        <h1 class="title">Carrito de Compras</h1>
 
-  <!-- Main Content -->
-  <main>
-    <section class="cart">
-      <h1 class="title">Carrito de Compras</h1>
-
-      <div class="cart-items" id="cart-items">
-        <!-- Los productos del carrito se añadirán dinámicamente aquí -->
-      </div>
-
-      <div class="cart-summary">
-        <p id="cart-total">Total: S/ 0.00</p>
-        <div class="cart-actions">
-          <button id="btn-clear-cart" class="btn-danger">Eliminar Todos los Productos</button>
-          <!-- Modifica el enlace del botón Proceder al Pago -->
-          <a href="#" id="btn-proceed" class="btn-primary">Proceder al Pago</a>
+        <div class="cart-items" id="cart-items">
+          <!-- Los productos del carrito se añadirán dinámicamente aquí -->
         </div>
-      </div>
 
-      <!-- Contenedor para el mensaje cuando el carrito está vacío -->
-      <div id="empty-cart-message" class="empty-cart-message" style="display: none;">
-        <p>No has añadido productos al carrito aún. ¡Descubre nuestros productos!</p>
-        <a href="../pages/products.html" class="btn-primary">Ver Productos</a>
-      </div>
-      
-    </section>
-  </main>
+        <div class="cart-summary">
+          <p id="cart-total">Total: S/ 0.00</p>
+          <div class="cart-actions">
+            <button id="btn-clear-cart" class="btn-danger">Eliminar Todos los Productos</button>
+            <!-- Modifica el enlace del botón Proceder al Pago -->
+            <a href="#" id="btn-proceed" class="btn-primary">Proceder al Pago</a>
+          </div>
+        </div>
 
-  <!-- Incluir el footer -->
-  <div id="footer"></div>
+        <!-- Contenedor para el mensaje cuando el carrito está vacío -->
+        <div id="empty-cart-message" class="empty-cart-message" style="display: none;">
+          <p>No has añadido productos al carrito aún. ¡Descubre nuestros productos!</p>
+          <a href="../pages/products.html" class="btn-primary">Ver Productos</a>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Incluir el footer -->
+    <div id="footer"></div>
+  </div>
+
+
 
   <!-- Vincular jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
