@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     emailjs.init("TFY4P409cNNWKcJgW"); // Asegúrate de usar tu Public Key
 
     const form = document.getElementById("reclamoForm");
-    const googleSheetsURL = "https://script.google.com/macros/s/AKfycbwGSUiWz94aJcDVQVi7VQ2VYWdT_-kZ9nILx3qjk3sf37HgskzMEM3qWIatE4c3aTCMhA/exec"; 
+    const googleSheetsURL = "https://script.google.com/macros/s/AKfycbzewImG9ftC5aOVWL_NJ4o9u7HvhU8dINj916k2UP0pXQXjinHOJXFMn9sBkgkbXDx-TA/exec"; 
 
     form.addEventListener("submit", async function (event) {
         event.preventDefault();
