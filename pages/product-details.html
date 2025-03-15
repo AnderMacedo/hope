@@ -38,7 +38,7 @@
     $(document).ready(function() {
       const urlParams = new URLSearchParams(window.location.search);
       const productId = urlParams.get('id');
-
+  
       $.getJSON('../data/products.json', function(products) {
         const product = products.find(p => p.id === productId);
       
@@ -80,27 +80,27 @@
               <div class="product-gallery">
                 <h3>Galería de Imágenes</h3>
                 <div class="gallery">
-                  ${product.detailsImages.map(image => `<img class="gallery-image" src="${image}" alt="${product.name}" loading="lazy">`).join('')}
+                  ${product.detailsImages.map((image, index) => `<img class="gallery-image" data-index="${index}" src="${image}" alt="${product.name}" loading="lazy">`).join('')}
                 </div>
               </div>
             `;
             $('#product-info').html(productDetails);
-
+  
             // Inicializar el carrusel
-            $('.product-carousel').slick({
+            const $carousel = $('.product-carousel').slick({
               dots: true,
               infinite: true,
               speed: 300,
               slidesToShow: 1,
               adaptiveHeight: true
             });
-
+  
             // Añadir evento click a las imágenes de la galería
             $('.gallery-image').on('click', function() {
-              const newSrc = $(this).attr('src');
-              $('#main-product-image').attr('src', newSrc);
+              const index = $(this).data('index'); // Obtener el índice de la imagen
+              $carousel.slick('slickGoTo', index); // Cambiar a la diapositiva correspondiente
             });
-
+  
             // Mostrar nombre del color al hacer hover o clic
             $('.color-circle').hover(function() {
               const colorName = $(this).data('color-name');
@@ -112,11 +112,11 @@
         }
       });      
     });
-
+  
     function generateSpec(label, value) {
       return value ? `<p class="spec"><strong>${label}:</strong> ${value}</p>` : '';
     }
-
+  
     function generateMaterialSpec(material) {
       if (!material) return '';
       const parts = [];

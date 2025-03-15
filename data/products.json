@@ -4,17 +4,18 @@
     "name": "Minipuffer Lola",
     "price": "55",
     "description": "Ideal para una salida casual, caben más que esenciales y agendas A5.",
-    "image": "../assets/images/MINIPUFFER/minipuffer-verde-oliva-1.png",
+    "image": "../assets/images/MINIPUFFER/minipuffer-verde-oliva-1.jpg",
     "detailsImages": [
-      "../assets/images/MINIPUFFER/minipuffer-verde-oliva-1.png",
-      "../assets/images/MINIPUFFER/minipuffer-plomo-rata-2.png",
-      "../assets/images/MINIPUFFER/minipuffer-crema-3.png",
-      "../assets/images/MINIPUFFER/minipuffer-camel-4.png",
-      "../assets/images/MINIPUFFER/minipuffer-topo-5.png",
-      "../assets/images/MINIPUFFER/minipuffer-celeste-6.png",
-      "../assets/images/MINIPUFFER/minipuffer-rosado-7.png",
-      "../assets/images/MINIPUFFER/mini-puffer-galeria-de-imagenes-extra-8.png",
-      "../assets/images/MINIPUFFER/mini-puffer-galeria-de-imagenes-extra-9.png"
+      "../assets/images/MINIPUFFER/minipuffer-verde-oliva-1.jpg",
+      "../assets/images/MINIPUFFER/minipuffer-plomo-rata-2.jpg",
+      "../assets/images/MINIPUFFER/minipuffer-crema-3.jpg",
+      "../assets/images/MINIPUFFER/minipuffer-camel-4.jpg",
+      "../assets/images/MINIPUFFER/minipuffer-topo-5.jpg",
+      "../assets/images/MINIPUFFER/minipuffer-celeste-6.jpg",
+      "../assets/images/MINIPUFFER/minipuffer-rosado-7.jpg",
+      "../assets/images/MINIPUFFER/mini-puffer-galeria-de-imagenes-extra-8.jpg",
+      "../assets/images/MINIPUFFER/mini-puffer-galeria-de-imagenes-extra-9.jpg",
+      "../assets/images/MINIPUFFER/minipuffer-negro.jpg"
     ],
     "category": "Puffers",
     "dimensions": "24cm x 24cm",
@@ -38,15 +39,15 @@
     "name": "Puffer Mediana Jael",
     "price": "75",
     "description": "Ideal para universidad, trabajo, etc. Para laptop de 14p. y cuadernos anillados A4.",
-    "image": "../assets/images/PUFFER_MEDIANA/puffer-mediana-negro-1.png",
+    "image": "../assets/images/PUFFER_MEDIANA/puffer-mediana-negro-1.jpg",
     "detailsImages": [
-      "../assets/images/PUFFER_MEDIANA/puffer-mediana-negro-1.png",
-      "../assets/images/PUFFER_MEDIANA/puffer-mediana-verde-oliva-2.png",
-      "../assets/images/PUFFER_MEDIANA/puffer-mediana-crema-3.png",
-      "../assets/images/PUFFER_MEDIANA/puffer-mediana-celeste-4.png",
-      "../assets/images/PUFFER_MEDIANA/puffer-mediana-topo-5.png",
-      "../assets/images/PUFFER_MEDIANA/puffer-mediana-camel-6.png",
-      "../assets/images/PUFFER_MEDIANA/puffer-mediana-rosado-7.png"
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-negro-1.jpg",
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-verde-oliva-2.jpg",
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-crema-3.jpg",
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-celeste-4.jpg",
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-topo-5.jpg",
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-camel-6.jpg",
+      "../assets/images/PUFFER_MEDIANA/puffer-mediana-rosado-7.jpg"
     ],
     "category": "Puffers",
     "dimensions": "47cm x 30cm",
@@ -72,14 +73,14 @@
     "name": "Puffer Jumbo Sharon",
     "price": "95",
     "description": "Ideal para universidad, trabajo, gym, etc. Para laptop de hasta 17p. y folders A3.",
-    "image": "../assets/images/PUFFER_JUMBO/puffer-jumbo-crema-1.png",
+    "image": "../assets/images/PUFFER_JUMBO/puffer-jumbo-crema-1.jpg",
     "detailsImages": [
-      "../assets/images/PUFFER_JUMBO/puffer-jumbo-crema-1.png",
-      "../assets/images/PUFFER_JUMBO/puffer-jumbo-verde-oliva-2.png",
-      "../assets/images/PUFFER_JUMBO/puffer-jumbo-plomo-rata-3.png",
-      "../assets/images/PUFFER_JUMBO/puffer-jumbo-camel-6.png",
-      "../assets/images/PUFFER_JUMBO/puffer-jumbo-verde-oliva-para-galeria-de-imagenes-de-la-puffer-jumbo.png",
-      "../assets/images/PUFFER_JUMBO/puffer-jumbo-verde-oliva-y-plomo-rata-para-galeria-de-imagenes-de-la-puffer-jumbo.png"
+      "../assets/images/PUFFER_JUMBO/puffer-jumbo-crema-1.jpg",
+      "../assets/images/PUFFER_JUMBO/puffer-jumbo-verde-oliva-2.jpg",
+      "../assets/images/PUFFER_JUMBO/puffer-jumbo-plomo-rata-3.jpg",
+      "../assets/images/PUFFER_JUMBO/puffer-jumbo-camel-6.jpg",
+      "../assets/images/PUFFER_JUMBO/puffer-jumbo-verde-oliva-para-galeria-de-imagenes-de-la-puffer-jumbo.jpg",
+      "../assets/images/PUFFER_JUMBO/puffer-jumbo-verde-oliva-y-plomo-rata-para-galeria-de-imagenes-de-la-puffer-jumbo.jpg"
     ],
     "category": "Puffers",
     "dimensions": "60cm x 34cm",
@@ -105,14 +106,14 @@
     "name": "Cartera Baguette Tulipán",
     "price": "120",
     "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
-    "image": "../assets/images/BAGUETTES/baguette-tulipan-beige-9.png",
+    "image": "../assets/images/BAGUETTES/baguette-tulipan-beige-9.jpg",
     "detailsImages": [
-      "../assets/images/BAGUETTES/baguette-tulipan-beige-9.png",
-      "../assets/images/BAGUETTES/baguette-tulipan-maiz-10.png",
-      "../assets/images/BAGUETTES//baguette-tulipan-maiz-para-galeria-de-imagenes-de-baguette-tulipan-11.png",
-      "../assets/images/BAGUETTES/baguette-tulipan-galeria-de-imagenes-extra.png",
-      "../assets/images/BAGUETTES/baguette-tulipan-galeria-de-imagenes-extra-1.png",
-      "../assets/images/BAGUETTES/baguette-tulipan-galeria-de-imagenes-extra-2.png"
+      "../assets/images/BAGUETTES/baguette-tulipan-beige-9.jpg",
+      "../assets/images/BAGUETTES/baguette-tulipan-maiz-10.jpg",
+      "../assets/images/BAGUETTES//baguette-tulipan-maiz-para-galeria-de-imagenes-de-baguette-tulipan-11.jpg",
+      "../assets/images/BAGUETTES/baguette-tulipan-galeria-de-imagenes-extra.jpg",
+      "../assets/images/BAGUETTES/baguette-tulipan-galeria-de-imagenes-extra-1.jpg",
+      "../assets/images/BAGUETTES/baguette-tulipan-galeria-de-imagenes-extra-2.jpg"
     ],
     "category": "Baguettes",
     "dimensions": "31cm x 24cm",
@@ -139,10 +140,10 @@
     "name": "Cartera Baguette Rosa",
     "price": "120",
     "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
-    "image": "../assets/images/BAGUETTES/baguette-rosa-camel-7.png",
+    "image": "../assets/images/BAGUETTES/baguette-rosa-camel-7.jpg",
     "detailsImages": [
-      "../assets/images/BAGUETTES/baguette-rosa-camel-7.png",
-      "../assets/images/BAGUETTES/baguette-rosa-para-galeria-de-imagenes-de-baguette-rosa-8.png"
+      "../assets/images/BAGUETTES/baguette-rosa-camel-7.jpg",
+      "../assets/images/BAGUETTES/baguette-rosa-para-galeria-de-imagenes-de-baguette-rosa-8.jpg"
     ],
     "category": "Baguettes",
     "dimensions": "31cm x 24cm",
@@ -167,10 +168,10 @@
     "name": "Cartera Baguette Fold",
     "price": "120",
     "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
-    "image": "../assets/images/BAGUETTES/baguette-fold-negro-12.png",
+    "image": "../assets/images/BAGUETTES/baguette-fold-negro-12.jpg",
     "detailsImages": [
-      "../assets/images/BAGUETTES/baguette-fold-negro-12.png",
-      "../assets/images/BAGUETTES/baguette-fold-negro-para-galeria-de-imagenes-de-baguette-fold-12.png"
+      "../assets/images/BAGUETTES/baguette-fold-negro-12.jpg",
+      "../assets/images/BAGUETTES/baguette-fold-negro-para-galeria-de-imagenes-de-baguette-fold-12.jpg"
     ],
     "category": "Baguettes",
     "dimensions": "31cm x 24cm",
@@ -195,13 +196,13 @@
     "name": "Cartera Baguette Emma",
     "price": "120",
     "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
-    "image": "../assets/images/BAGUETTES/baguette-emma-crema-4.png",
+    "image": "../assets/images/BAGUETTES/baguette-emma-crema-4.jpg",
     "detailsImages": [
-      "../assets/images/BAGUETTES/baguette-emma-crema-4.png",
-      "../assets/images/BAGUETTES/baguette-emma-negro-5.png",
-      "../assets/images/BAGUETTES/baguette-emma-galeria-de-imagenes-extra.png",
-      "../assets/images/BAGUETTES/baguette-emma-negro-para-galeria-de-imagenes-de-baguette-emma-13.png",
-      "../assets/images/BAGUETTES/baguette-emma-combinaciones-para-galeria-de-imagenes-6.png"
+      "../assets/images/BAGUETTES/baguette-emma-crema-4.jpg",
+      "../assets/images/BAGUETTES/baguette-emma-negro-5.jpg",
+      "../assets/images/BAGUETTES/baguette-emma-galeria-de-imagenes-extra.jpg",
+      "../assets/images/BAGUETTES/baguette-emma-negro-para-galeria-de-imagenes-de-baguette-emma-13.jpg",
+      "../assets/images/BAGUETTES/baguette-emma-combinaciones-para-galeria-de-imagenes-6.jpg"
     ],
     "category": "Baguettes",
     "dimensions": "31cm x 24cm",
@@ -225,10 +226,10 @@
     "name": "Cartera Baguette Girasol",
     "price": "120",
     "description": "Ideal para outfits casual chic, sport elegant, semiformal, etc. Para tablet de 11p. y agendas A5.",
-    "image": "../assets/images/BAGUETTES/baguette-girasol-maiz-1.png",
+    "image": "../assets/images/BAGUETTES/baguette-girasol-maiz-1.jpg",
     "detailsImages": [
-      "../assets/images/BAGUETTES/baguette-girasol-maiz-1.png",
-      "../assets/images/BAGUETTES/baguette-girasol-beige-2.png"
+      "../assets/images/BAGUETTES/baguette-girasol-maiz-1.jpg",
+      "../assets/images/BAGUETTES/baguette-girasol-beige-2.jpg"
     ],
     "category": "bags",
     "dimensions": "31cm x 24cm",
@@ -252,15 +253,15 @@
     "name": "Cartera Romantic Bag",
     "price": "76",
     "description": "Una elegante y sofisticada cartera para cualquier ocasión.",
-    "image": "../assets/images/ROMANTIC_BAG/romantic-bag-portada-7.png",
+    "image": "../assets/images/ROMANTIC_BAG/romantic-bag-portada-7.jpg",
     "detailsImages": [
-      "../assets/images/ROMANTIC_BAG/romantic-bag-portada-7.png",
-      "../assets/images/ROMANTIC_BAG/romantic-bag-crema-galeria-de-fotos-2.png",
-      "../assets/images/ROMANTIC_BAG/romantic-bag-crema-galeria-de-fotos-3.png",
-      "../assets/images/ROMANTIC_BAG/romantic-bag-rosado-galeria-de-fotos-3.png",
-      "../assets/images/ROMANTIC_BAG/romantic-bag-negro-galeria-de-fotos-5.png",
-      "../assets/images/ROMANTIC_BAG/romantic-bag-negro-galeria-de-fotos-6.png",
-      "../assets/images/ROMANTIC_BAG/romantic-bag-galeria-de-imagenes-extra.png"
+      "../assets/images/ROMANTIC_BAG/romantic-bag-portada-7.jpg",
+      "../assets/images/ROMANTIC_BAG/romantic-bag-crema-galeria-de-fotos-2.jpg",
+      "../assets/images/ROMANTIC_BAG/romantic-bag-crema-galeria-de-fotos-3.jpg",
+      "../assets/images/ROMANTIC_BAG/romantic-bag-rosado-galeria-de-fotos-3.jpg",
+      "../assets/images/ROMANTIC_BAG/romantic-bag-negro-galeria-de-fotos-5.jpg",
+      "../assets/images/ROMANTIC_BAG/romantic-bag-negro-galeria-de-fotos-6.jpg",
+      "../assets/images/ROMANTIC_BAG/romantic-bag-galeria-de-imagenes-extra.jpg"
     ],
     "category": "Romantic bag",
     "dimensions": "30cm x 20cm",
@@ -284,15 +285,15 @@
     "name": "Straps con diseño",
     "price": "30",
     "description": "Un elegante strap ideal para darle un toque único y resaltar tu bolso.",
-    "image": "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-galeria-de-imagenes-extra-7.png",
+    "image": "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-galeria-de-imagenes-extra-7.jpg",
     "detailsImages": [
-      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-zebra-1.png",
-      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-flechas-2.png",
-      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-colibri-3.png",
-      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-zebra-dorada-4.png",
-      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-vaca-5.png",
-      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-galeria-de-imagenes-extra-6.png",
-      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-galeria-de-imagenes-extra-7.png"
+      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-zebra-1.jpg",
+      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-flechas-2.jpg",
+      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-colibri-3.jpg",
+      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-zebra-dorada-4.jpg",
+      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-vaca-5.jpg",
+      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-galeria-de-imagenes-extra-6.jpg",
+      "../assets/images/STRAP_CON_DISEÑO/strap-con-diseño-galeria-de-imagenes-extra-7.jpg"
     ],
     "category": "Straps",
     "dimensions": "3.8cm de ancho x 1.50m de largo",
@@ -314,10 +315,10 @@
     "name": "Tote Bag Ocean",
     "price": "57",
     "description": "Ideal para esos días de playa y piscina, con un estilo veraniego perfecto para esta temporada. Con diseño artesanal y detalles únicos.",
-    "image": "../assets/images/SET_PLAYERO/set_playero_tote_bag_ocean_1.png",
+    "image": "../assets/images/SET_PLAYERO/set_playero_tote_bag_ocean_1.jpg",
     "detailsImages": [
-      "../assets/images/SET_PLAYERO/set_playero_tote_bag_ocean_1.png",
-      "../assets/images/SET_PLAYERO/set_playero_tote_bag_ocean_5.png"
+      "../assets/images/SET_PLAYERO/set_playero_tote_bag_ocean_1.jpg",
+      "../assets/images/SET_PLAYERO/set_playero_tote_bag_ocean_5.jpg"
     ],
     "category": "Playeros",
     "dimensions": "55x35",
@@ -342,9 +343,9 @@
     "name": "Neceser Perla",
     "price": "24",
     "description": "Un neceser elegante con diseño de líneas en ondas bicolor e incrustaciones de perlas, ideal para llevar en tus playeros.",
-    "image": "../assets/images/SET_PLAYERO/set_playero_nesecer_perla_4.png",
+    "image": "../assets/images/SET_PLAYERO/set_playero_nesecer_perla_4.jpg",
     "detailsImages": [
-      "../assets/images/SET_PLAYERO/set_playero_nesecer_perla_4.png"
+      "../assets/images/SET_PLAYERO/set_playero_nesecer_perla_4.jpg"
     ],
     "category": "Playeros",
     "dimensions": "30x25",
@@ -365,9 +366,9 @@
     "name": "Morral Almeja",
     "price": "35",
     "description": "Un morral pequeño con diseño de líneas y base tipo almeja, incrustaciones de perlas, y secretero posterior. Ideal para organizar tus pertenencias.",
-    "image": "../assets/images/SET_PLAYERO/set_playero_morral_almeja_3.png",
+    "image": "../assets/images/SET_PLAYERO/set_playero_morral_almeja_3.jpg",
     "detailsImages": [
-      "../assets/images/SET_PLAYERO/set_playero_morral_almeja_3.png"
+      "../assets/images/SET_PLAYERO/set_playero_morral_almeja_3.jpg"
     ],
     "category": "Playeros",
     "dimensions": "30x25",
@@ -384,5 +385,113 @@
     ],
     "closures": "Cierre tractor y de nylon de excelente calidad",
     "colors": []
+  },
+  {
+    "id": "neceser-jumbo",
+    "name": "Neceser Jumbo",
+    "price": "25",
+    "description": "Un neceser espacioso y elegante con diseño minimalista, ideal para organizar tus pertenencias de viaje o uso diario.",
+    "image": "../assets/images/NECESERES_JUMBO/neceser_jumbo_portada_6.jpg",
+    "detailsImages": [
+      "../assets/images/NECESERES_JUMBO/neceser_jumbo_portada_6.jpg",
+      "../assets/images/NECESERES_JUMBO/neceser_jumbo_topo_2.jpg",
+      "../assets/images/NECESERES_JUMBO/neceser_jumbo_crema_3.jpg",
+      "../assets/images/NECESERES_JUMBO/neceser_jumbo_celeste_4.jpg",
+      "../assets/images/NECESERES_JUMBO/neceser_jumbo_negro_5.jpg"
+    ],
+    "category": "Neceser",
+    "dimensions": "40x30",
+    "size": "Grande",
+    "material": {
+      "exterior": "Lona tipo drill",
+      "interior": "Totalmente forrado impermeable"
+    },
+    "details": [
+      "Diseño minimalista",
+      "Espacioso y funcional",
+      "Ideal para viajes o uso diario"
+    ],
+    "closures": "Cierre tractor de excelente calidad",
+    "colors": ["Celeste", "Crema", "Topo", "Negro"]
+  },
+  {
+    "id": "neceser-afelpado",
+    "name": "Neceser Afelpado",
+    "price": "27",
+    "description": "Un neceser suave y elegante con textura afelpada, ideal para guardar tus pertenencias con estilo y comodidad.",
+    "image": "../assets/images/NECESERES_JUMBO_AFELPADOS/neceser_jumbo_afelpado_portada.jpg",
+    "detailsImages": [
+      "../assets/images/NECESERES_JUMBO_AFELPADOS/neceser_jumbo_afelpado_portada.jpg",
+      "../assets/images/NECESERES_JUMBO_AFELPADOS/neceser_y_estuche_afelpado_galeria.jpg",
+      "../assets/images/NECESERES_JUMBO_AFELPADOS/neceser_y_estuche_afelpado_galeria_2.jpg"
+    ],
+    "category": "Neceser",
+    "dimensions": "35x25",
+    "size": "Mediano",
+    "material": {
+      "exterior": "Tela afelpada de alta calidad",
+      "interior": "Totalmente forrado impermeable"
+    },
+    "details": [
+      "Textura afelpada suave al tacto",
+      "Diseño elegante y funcional",
+      "Ideal para uso diario o viajes"
+    ],
+    "closures": "Cierre tractor de excelente calidad",
+    "colors": ["Diseños de corazon y cordero"]
+  },
+  {
+    "id": "estuche-multifuncional",
+    "name": "Estuche Multifuncional",
+    "price": "15",
+    "description": "Un estuche práctico y versátil, ideal para organizar tus artículos de oficina, maquillaje o accesorios personales.",
+    "image": "../assets/images/ESTUCHES/estuches_portada_1.jpg",
+    "detailsImages": [
+      "../assets/images/ESTUCHES/estuches_portada_1.jpg",
+      "../assets/images/ESTUCHES/estuches_crema_1.jpg",
+      "../assets/images/ESTUCHES/estuches_topo_2.jpg",
+      "../assets/images/ESTUCHES/estuches_negro_3.jpg",
+      "../assets/images/ESTUCHES/estuches_celeste_4.jpg"
+    ],
+    "category": "Estuches",
+    "dimensions": "25x15",
+    "size": "Pequeño",
+    "material": {
+      "exterior": "Lona tipo drill",
+      "interior": "Totalmente forrado impermeable"
+    },
+    "details": [
+      "Diseño compacto y funcional",
+      "Ideal para artículos de oficina, maquillaje o accesorios",
+      "Fácil de transportar"
+    ],
+    "closures": "Cierre de excelente calidad",
+    "colors": ["Celeste", "Crema", "Topo", "Negro"]
+  },
+  {
+    "id": "estuche-afelpado",
+    "name": "Estuche Afelpado",
+    "price": "17",
+    "description": "Un estuche suave y elegante con textura afelpada, ideal para organizar tus accesorios personales o artículos de oficina.",
+    "image": "../assets/images/ESTUCHES_AFELPADOS/estuche_afelpado_portada.jpg",
+    "detailsImages": [
+      "../assets/images/ESTUCHES_AFELPADOS/estuche_afelpado_portada.jpg",
+      "../assets/images/ESTUCHES_AFELPADOS/neceser_y_estuche_afelpado_galeria.jpg",
+      "../assets/images/ESTUCHES_AFELPADOS/neceser_y_estuche_afelpado_galeria_2.jpg"
+    ],
+    "category": "Estuches",
+    "dimensions": "20x10",
+    "size": "Pequeño",
+    "material": {
+      "exterior": "Tela afelpada de alta calidad",
+      "interior": "Totalmente forrado impermeable"
+    },
+    "details": [
+      "Textura afelpada suave al tacto",
+      "Diseño compacto y funcional",
+      "Ideal para accesorios personales o artículos de oficina"
+    ],
+    "closures": "Cierre de excelente calidad",
+    "colors": ["Diseños de corazon y cordero"]
   }
 ]
