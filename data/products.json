@@ -400,18 +400,16 @@
       "../assets/images/NECESERES_JUMBO/neceser_jumbo_negro_5.jpg"
     ],
     "category": "Neceser",
-    "dimensions": "40x30",
+    "dimensions": "12 de alto x 12 de base x 20 de ancho",
     "size": "Grande",
     "material": {
-      "exterior": "Lona tipo drill",
-      "interior": "Totalmente forrado impermeable"
+      "exterior": "Taslan Boomber",
+      "interior": "Forrado impermeable"
     },
     "details": [
-      "Diseño minimalista",
-      "Espacioso y funcional",
-      "Ideal para viajes o uso diario"
+      "Diseño minimalista, espacioso y funcional, ideal para viajes o uso diario"
     ],
-    "closures": "Cierre tractor de excelente calidad",
+    "closures": "cierre nailon rey excelente calidad",
     "colors": ["Celeste", "Crema", "Topo", "Negro"]
   },
   {
@@ -426,8 +424,8 @@
       "../assets/images/NECESERES_JUMBO_AFELPADOS/neceser_y_estuche_afelpado_galeria_2.jpg"
     ],
     "category": "Neceser",
-    "dimensions": "35x25",
-    "size": "Mediano",
+    "dimensions": "22x13",
+    "size": "Grande",
     "material": {
       "exterior": "Tela afelpada de alta calidad",
       "interior": "Totalmente forrado impermeable"
@@ -437,7 +435,7 @@
       "Diseño elegante y funcional",
       "Ideal para uso diario o viajes"
     ],
-    "closures": "Cierre tractor de excelente calidad",
+    "closures": "Cierre Rey de nylon, excelente calidad",
     "colors": ["Diseños de corazon y cordero"]
   },
   {
@@ -454,10 +452,10 @@
       "../assets/images/ESTUCHES/estuches_celeste_4.jpg"
     ],
     "category": "Estuches",
-    "dimensions": "25x15",
+    "dimensions": "24x17",
     "size": "Pequeño",
     "material": {
-      "exterior": "Lona tipo drill",
+      "exterior": "tallan boomber",
       "interior": "Totalmente forrado impermeable"
     },
     "details": [
@@ -465,7 +463,7 @@
       "Ideal para artículos de oficina, maquillaje o accesorios",
       "Fácil de transportar"
     ],
-    "closures": "Cierre de excelente calidad",
+    "closures": "Cierre rey de nylon excelente calidad",
     "colors": ["Celeste", "Crema", "Topo", "Negro"]
   },
   {
